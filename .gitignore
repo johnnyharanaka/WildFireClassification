@@ -1,0 +1,1676 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# UV
+#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#uv.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
+
+# PyPI configuration file
+.pypirc
+
+models/
+*.npz
+*.pth
+*.code-workspace
+Backup/
+/.idea/
+__pycache__/
+results/
+resultados_finais/
+output/
+data_fire_bk/
+data_nwpu_bak/
+data_fire/
+data_nwpu/
+bbox_debug/
+annotations_coco/
+antes/
+*.DS_Store
+*.pyc
+*.pyo
+*.jpg
+*.json
+*.log
+*.tmp
+/venv/
+.env
+.venv
+.python-version
+.dockerignore
+/NWPU VHR-10 dataset/ground truth/001.txt
+/NWPU VHR-10 dataset/ground truth/002.txt
+/NWPU VHR-10 dataset/ground truth/003.txt
+/NWPU VHR-10 dataset/ground truth/004.txt
+/NWPU VHR-10 dataset/ground truth/005.txt
+/NWPU VHR-10 dataset/ground truth/006.txt
+/NWPU VHR-10 dataset/ground truth/007.txt
+/NWPU VHR-10 dataset/ground truth/008.txt
+/NWPU VHR-10 dataset/ground truth/009.txt
+/NWPU VHR-10 dataset/ground truth/010.txt
+/NWPU VHR-10 dataset/ground truth/011.txt
+/NWPU VHR-10 dataset/ground truth/012.txt
+/NWPU VHR-10 dataset/ground truth/013.txt
+/NWPU VHR-10 dataset/ground truth/014.txt
+/NWPU VHR-10 dataset/ground truth/015.txt
+/NWPU VHR-10 dataset/ground truth/016.txt
+/NWPU VHR-10 dataset/ground truth/017.txt
+/NWPU VHR-10 dataset/ground truth/018.txt
+/NWPU VHR-10 dataset/ground truth/019.txt
+/NWPU VHR-10 dataset/ground truth/020.txt
+/NWPU VHR-10 dataset/ground truth/021.txt
+/NWPU VHR-10 dataset/ground truth/022.txt
+/NWPU VHR-10 dataset/ground truth/023.txt
+/NWPU VHR-10 dataset/ground truth/024.txt
+/NWPU VHR-10 dataset/ground truth/025.txt
+/NWPU VHR-10 dataset/ground truth/026.txt
+/NWPU VHR-10 dataset/ground truth/027.txt
+/NWPU VHR-10 dataset/ground truth/028.txt
+/NWPU VHR-10 dataset/ground truth/029.txt
+/NWPU VHR-10 dataset/ground truth/030.txt
+/NWPU VHR-10 dataset/ground truth/031.txt
+/NWPU VHR-10 dataset/ground truth/032.txt
+/NWPU VHR-10 dataset/ground truth/033.txt
+/NWPU VHR-10 dataset/ground truth/034.txt
+/NWPU VHR-10 dataset/ground truth/035.txt
+/NWPU VHR-10 dataset/ground truth/036.txt
+/NWPU VHR-10 dataset/ground truth/037.txt
+/NWPU VHR-10 dataset/ground truth/038.txt
+/NWPU VHR-10 dataset/ground truth/039.txt
+/NWPU VHR-10 dataset/ground truth/040.txt
+/NWPU VHR-10 dataset/ground truth/041.txt
+/NWPU VHR-10 dataset/ground truth/042.txt
+/NWPU VHR-10 dataset/ground truth/043.txt
+/NWPU VHR-10 dataset/ground truth/044.txt
+/NWPU VHR-10 dataset/ground truth/045.txt
+/NWPU VHR-10 dataset/ground truth/046.txt
+/NWPU VHR-10 dataset/ground truth/047.txt
+/NWPU VHR-10 dataset/ground truth/048.txt
+/NWPU VHR-10 dataset/ground truth/049.txt
+/NWPU VHR-10 dataset/ground truth/050.txt
+/NWPU VHR-10 dataset/ground truth/051.txt
+/NWPU VHR-10 dataset/ground truth/052.txt
+/NWPU VHR-10 dataset/ground truth/053.txt
+/NWPU VHR-10 dataset/ground truth/054.txt
+/NWPU VHR-10 dataset/ground truth/055.txt
+/NWPU VHR-10 dataset/ground truth/056.txt
+/NWPU VHR-10 dataset/ground truth/057.txt
+/NWPU VHR-10 dataset/ground truth/058.txt
+/NWPU VHR-10 dataset/ground truth/059.txt
+/NWPU VHR-10 dataset/ground truth/060.txt
+/NWPU VHR-10 dataset/ground truth/061.txt
+/NWPU VHR-10 dataset/ground truth/062.txt
+/NWPU VHR-10 dataset/ground truth/063.txt
+/NWPU VHR-10 dataset/ground truth/064.txt
+/NWPU VHR-10 dataset/ground truth/065.txt
+/NWPU VHR-10 dataset/ground truth/066.txt
+/NWPU VHR-10 dataset/ground truth/067.txt
+/NWPU VHR-10 dataset/ground truth/068.txt
+/NWPU VHR-10 dataset/ground truth/069.txt
+/NWPU VHR-10 dataset/ground truth/070.txt
+/NWPU VHR-10 dataset/ground truth/071.txt
+/NWPU VHR-10 dataset/ground truth/072.txt
+/NWPU VHR-10 dataset/ground truth/073.txt
+/NWPU VHR-10 dataset/ground truth/074.txt
+/NWPU VHR-10 dataset/ground truth/075.txt
+/NWPU VHR-10 dataset/ground truth/076.txt
+/NWPU VHR-10 dataset/ground truth/077.txt
+/NWPU VHR-10 dataset/ground truth/078.txt
+/NWPU VHR-10 dataset/ground truth/079.txt
+/NWPU VHR-10 dataset/ground truth/080.txt
+/NWPU VHR-10 dataset/ground truth/081.txt
+/NWPU VHR-10 dataset/ground truth/082.txt
+/NWPU VHR-10 dataset/ground truth/083.txt
+/NWPU VHR-10 dataset/ground truth/084.txt
+/NWPU VHR-10 dataset/ground truth/085.txt
+/NWPU VHR-10 dataset/ground truth/086.txt
+/NWPU VHR-10 dataset/ground truth/087.txt
+/NWPU VHR-10 dataset/ground truth/088.txt
+/NWPU VHR-10 dataset/ground truth/089.txt
+/NWPU VHR-10 dataset/ground truth/090.txt
+/NWPU VHR-10 dataset/ground truth/091.txt
+/NWPU VHR-10 dataset/ground truth/092.txt
+/NWPU VHR-10 dataset/ground truth/093.txt
+/NWPU VHR-10 dataset/ground truth/094.txt
+/NWPU VHR-10 dataset/ground truth/095.txt
+/NWPU VHR-10 dataset/ground truth/096.txt
+/NWPU VHR-10 dataset/ground truth/097.txt
+/NWPU VHR-10 dataset/ground truth/098.txt
+/NWPU VHR-10 dataset/ground truth/099.txt
+/NWPU VHR-10 dataset/ground truth/100.txt
+/NWPU VHR-10 dataset/ground truth/101.txt
+/NWPU VHR-10 dataset/ground truth/102.txt
+/NWPU VHR-10 dataset/ground truth/103.txt
+/NWPU VHR-10 dataset/ground truth/104.txt
+/NWPU VHR-10 dataset/ground truth/105.txt
+/NWPU VHR-10 dataset/ground truth/106.txt
+/NWPU VHR-10 dataset/ground truth/107.txt
+/NWPU VHR-10 dataset/ground truth/108.txt
+/NWPU VHR-10 dataset/ground truth/109.txt
+/NWPU VHR-10 dataset/ground truth/110.txt
+/NWPU VHR-10 dataset/ground truth/111.txt
+/NWPU VHR-10 dataset/ground truth/112.txt
+/NWPU VHR-10 dataset/ground truth/113.txt
+/NWPU VHR-10 dataset/ground truth/114.txt
+/NWPU VHR-10 dataset/ground truth/115.txt
+/NWPU VHR-10 dataset/ground truth/116.txt
+/NWPU VHR-10 dataset/ground truth/117.txt
+/NWPU VHR-10 dataset/ground truth/118.txt
+/NWPU VHR-10 dataset/ground truth/119.txt
+/NWPU VHR-10 dataset/ground truth/120.txt
+/NWPU VHR-10 dataset/ground truth/121.txt
+/NWPU VHR-10 dataset/ground truth/122.txt
+/NWPU VHR-10 dataset/ground truth/123.txt
+/NWPU VHR-10 dataset/ground truth/124.txt
+/NWPU VHR-10 dataset/ground truth/125.txt
+/NWPU VHR-10 dataset/ground truth/126.txt
+/NWPU VHR-10 dataset/ground truth/127.txt
+/NWPU VHR-10 dataset/ground truth/128.txt
+/NWPU VHR-10 dataset/ground truth/129.txt
+/NWPU VHR-10 dataset/ground truth/130.txt
+/NWPU VHR-10 dataset/ground truth/131.txt
+/NWPU VHR-10 dataset/ground truth/132.txt
+/NWPU VHR-10 dataset/ground truth/133.txt
+/NWPU VHR-10 dataset/ground truth/134.txt
+/NWPU VHR-10 dataset/ground truth/135.txt
+/NWPU VHR-10 dataset/ground truth/136.txt
+/NWPU VHR-10 dataset/ground truth/137.txt
+/NWPU VHR-10 dataset/ground truth/138.txt
+/NWPU VHR-10 dataset/ground truth/139.txt
+/NWPU VHR-10 dataset/ground truth/140.txt
+/NWPU VHR-10 dataset/ground truth/141.txt
+/NWPU VHR-10 dataset/ground truth/142.txt
+/NWPU VHR-10 dataset/ground truth/143.txt
+/NWPU VHR-10 dataset/ground truth/144.txt
+/NWPU VHR-10 dataset/ground truth/145.txt
+/NWPU VHR-10 dataset/ground truth/146.txt
+/NWPU VHR-10 dataset/ground truth/147.txt
+/NWPU VHR-10 dataset/ground truth/148.txt
+/NWPU VHR-10 dataset/ground truth/149.txt
+/NWPU VHR-10 dataset/ground truth/150.txt
+/NWPU VHR-10 dataset/ground truth/151.txt
+/NWPU VHR-10 dataset/ground truth/152.txt
+/NWPU VHR-10 dataset/ground truth/153.txt
+/NWPU VHR-10 dataset/ground truth/154.txt
+/NWPU VHR-10 dataset/ground truth/155.txt
+/NWPU VHR-10 dataset/ground truth/156.txt
+/NWPU VHR-10 dataset/ground truth/157.txt
+/NWPU VHR-10 dataset/ground truth/158.txt
+/NWPU VHR-10 dataset/ground truth/159.txt
+/NWPU VHR-10 dataset/ground truth/160.txt
+/NWPU VHR-10 dataset/ground truth/161.txt
+/NWPU VHR-10 dataset/ground truth/162.txt
+/NWPU VHR-10 dataset/ground truth/163.txt
+/NWPU VHR-10 dataset/ground truth/164.txt
+/NWPU VHR-10 dataset/ground truth/165.txt
+/NWPU VHR-10 dataset/ground truth/166.txt
+/NWPU VHR-10 dataset/ground truth/167.txt
+/NWPU VHR-10 dataset/ground truth/168.txt
+/NWPU VHR-10 dataset/ground truth/169.txt
+/NWPU VHR-10 dataset/ground truth/170.txt
+/NWPU VHR-10 dataset/ground truth/171.txt
+/NWPU VHR-10 dataset/ground truth/172.txt
+/NWPU VHR-10 dataset/ground truth/173.txt
+/NWPU VHR-10 dataset/ground truth/174.txt
+/NWPU VHR-10 dataset/ground truth/175.txt
+/NWPU VHR-10 dataset/ground truth/176.txt
+/NWPU VHR-10 dataset/ground truth/177.txt
+/NWPU VHR-10 dataset/ground truth/178.txt
+/NWPU VHR-10 dataset/ground truth/179.txt
+/NWPU VHR-10 dataset/ground truth/180.txt
+/NWPU VHR-10 dataset/ground truth/181.txt
+/NWPU VHR-10 dataset/ground truth/182.txt
+/NWPU VHR-10 dataset/ground truth/183.txt
+/NWPU VHR-10 dataset/ground truth/184.txt
+/NWPU VHR-10 dataset/ground truth/185.txt
+/NWPU VHR-10 dataset/ground truth/186.txt
+/NWPU VHR-10 dataset/ground truth/187.txt
+/NWPU VHR-10 dataset/ground truth/188.txt
+/NWPU VHR-10 dataset/ground truth/189.txt
+/NWPU VHR-10 dataset/ground truth/190.txt
+/NWPU VHR-10 dataset/ground truth/191.txt
+/NWPU VHR-10 dataset/ground truth/192.txt
+/NWPU VHR-10 dataset/ground truth/193.txt
+/NWPU VHR-10 dataset/ground truth/194.txt
+/NWPU VHR-10 dataset/ground truth/195.txt
+/NWPU VHR-10 dataset/ground truth/196.txt
+/NWPU VHR-10 dataset/ground truth/197.txt
+/NWPU VHR-10 dataset/ground truth/198.txt
+/NWPU VHR-10 dataset/ground truth/199.txt
+/NWPU VHR-10 dataset/ground truth/200.txt
+/NWPU VHR-10 dataset/ground truth/201.txt
+/NWPU VHR-10 dataset/ground truth/202.txt
+/NWPU VHR-10 dataset/ground truth/203.txt
+/NWPU VHR-10 dataset/ground truth/204.txt
+/NWPU VHR-10 dataset/ground truth/205.txt
+/NWPU VHR-10 dataset/ground truth/206.txt
+/NWPU VHR-10 dataset/ground truth/207.txt
+/NWPU VHR-10 dataset/ground truth/208.txt
+/NWPU VHR-10 dataset/ground truth/209.txt
+/NWPU VHR-10 dataset/ground truth/210.txt
+/NWPU VHR-10 dataset/ground truth/211.txt
+/NWPU VHR-10 dataset/ground truth/212.txt
+/NWPU VHR-10 dataset/ground truth/213.txt
+/NWPU VHR-10 dataset/ground truth/214.txt
+/NWPU VHR-10 dataset/ground truth/215.txt
+/NWPU VHR-10 dataset/ground truth/216.txt
+/NWPU VHR-10 dataset/ground truth/217.txt
+/NWPU VHR-10 dataset/ground truth/218.txt
+/NWPU VHR-10 dataset/ground truth/219.txt
+/NWPU VHR-10 dataset/ground truth/220.txt
+/NWPU VHR-10 dataset/ground truth/221.txt
+/NWPU VHR-10 dataset/ground truth/222.txt
+/NWPU VHR-10 dataset/ground truth/223.txt
+/NWPU VHR-10 dataset/ground truth/224.txt
+/NWPU VHR-10 dataset/ground truth/225.txt
+/NWPU VHR-10 dataset/ground truth/226.txt
+/NWPU VHR-10 dataset/ground truth/227.txt
+/NWPU VHR-10 dataset/ground truth/228.txt
+/NWPU VHR-10 dataset/ground truth/229.txt
+/NWPU VHR-10 dataset/ground truth/230.txt
+/NWPU VHR-10 dataset/ground truth/231.txt
+/NWPU VHR-10 dataset/ground truth/232.txt
+/NWPU VHR-10 dataset/ground truth/233.txt
+/NWPU VHR-10 dataset/ground truth/234.txt
+/NWPU VHR-10 dataset/ground truth/235.txt
+/NWPU VHR-10 dataset/ground truth/236.txt
+/NWPU VHR-10 dataset/ground truth/237.txt
+/NWPU VHR-10 dataset/ground truth/238.txt
+/NWPU VHR-10 dataset/ground truth/239.txt
+/NWPU VHR-10 dataset/ground truth/240.txt
+/NWPU VHR-10 dataset/ground truth/241.txt
+/NWPU VHR-10 dataset/ground truth/242.txt
+/NWPU VHR-10 dataset/ground truth/243.txt
+/NWPU VHR-10 dataset/ground truth/244.txt
+/NWPU VHR-10 dataset/ground truth/245.txt
+/NWPU VHR-10 dataset/ground truth/246.txt
+/NWPU VHR-10 dataset/ground truth/247.txt
+/NWPU VHR-10 dataset/ground truth/248.txt
+/NWPU VHR-10 dataset/ground truth/249.txt
+/NWPU VHR-10 dataset/ground truth/250.txt
+/NWPU VHR-10 dataset/ground truth/251.txt
+/NWPU VHR-10 dataset/ground truth/252.txt
+/NWPU VHR-10 dataset/ground truth/253.txt
+/NWPU VHR-10 dataset/ground truth/254.txt
+/NWPU VHR-10 dataset/ground truth/255.txt
+/NWPU VHR-10 dataset/ground truth/256.txt
+/NWPU VHR-10 dataset/ground truth/257.txt
+/NWPU VHR-10 dataset/ground truth/258.txt
+/NWPU VHR-10 dataset/ground truth/259.txt
+/NWPU VHR-10 dataset/ground truth/260.txt
+/NWPU VHR-10 dataset/ground truth/261.txt
+/NWPU VHR-10 dataset/ground truth/262.txt
+/NWPU VHR-10 dataset/ground truth/263.txt
+/NWPU VHR-10 dataset/ground truth/264.txt
+/NWPU VHR-10 dataset/ground truth/265.txt
+/NWPU VHR-10 dataset/ground truth/266.txt
+/NWPU VHR-10 dataset/ground truth/267.txt
+/NWPU VHR-10 dataset/ground truth/268.txt
+/NWPU VHR-10 dataset/ground truth/269.txt
+/NWPU VHR-10 dataset/ground truth/270.txt
+/NWPU VHR-10 dataset/ground truth/271.txt
+/NWPU VHR-10 dataset/ground truth/272.txt
+/NWPU VHR-10 dataset/ground truth/273.txt
+/NWPU VHR-10 dataset/ground truth/274.txt
+/NWPU VHR-10 dataset/ground truth/275.txt
+/NWPU VHR-10 dataset/ground truth/276.txt
+/NWPU VHR-10 dataset/ground truth/277.txt
+/NWPU VHR-10 dataset/ground truth/278.txt
+/NWPU VHR-10 dataset/ground truth/279.txt
+/NWPU VHR-10 dataset/ground truth/280.txt
+/NWPU VHR-10 dataset/ground truth/281.txt
+/NWPU VHR-10 dataset/ground truth/282.txt
+/NWPU VHR-10 dataset/ground truth/283.txt
+/NWPU VHR-10 dataset/ground truth/284.txt
+/NWPU VHR-10 dataset/ground truth/285.txt
+/NWPU VHR-10 dataset/ground truth/286.txt
+/NWPU VHR-10 dataset/ground truth/287.txt
+/NWPU VHR-10 dataset/ground truth/288.txt
+/NWPU VHR-10 dataset/ground truth/289.txt
+/NWPU VHR-10 dataset/ground truth/290.txt
+/NWPU VHR-10 dataset/ground truth/291.txt
+/NWPU VHR-10 dataset/ground truth/292.txt
+/NWPU VHR-10 dataset/ground truth/293.txt
+/NWPU VHR-10 dataset/ground truth/294.txt
+/NWPU VHR-10 dataset/ground truth/295.txt
+/NWPU VHR-10 dataset/ground truth/296.txt
+/NWPU VHR-10 dataset/ground truth/297.txt
+/NWPU VHR-10 dataset/ground truth/298.txt
+/NWPU VHR-10 dataset/ground truth/299.txt
+/NWPU VHR-10 dataset/ground truth/300.txt
+/NWPU VHR-10 dataset/ground truth/301.txt
+/NWPU VHR-10 dataset/ground truth/302.txt
+/NWPU VHR-10 dataset/ground truth/303.txt
+/NWPU VHR-10 dataset/ground truth/304.txt
+/NWPU VHR-10 dataset/ground truth/305.txt
+/NWPU VHR-10 dataset/ground truth/306.txt
+/NWPU VHR-10 dataset/ground truth/307.txt
+/NWPU VHR-10 dataset/ground truth/308.txt
+/NWPU VHR-10 dataset/ground truth/309.txt
+/NWPU VHR-10 dataset/ground truth/310.txt
+/NWPU VHR-10 dataset/ground truth/311.txt
+/NWPU VHR-10 dataset/ground truth/312.txt
+/NWPU VHR-10 dataset/ground truth/313.txt
+/NWPU VHR-10 dataset/ground truth/314.txt
+/NWPU VHR-10 dataset/ground truth/315.txt
+/NWPU VHR-10 dataset/ground truth/316.txt
+/NWPU VHR-10 dataset/ground truth/317.txt
+/NWPU VHR-10 dataset/ground truth/318.txt
+/NWPU VHR-10 dataset/ground truth/319.txt
+/NWPU VHR-10 dataset/ground truth/320.txt
+/NWPU VHR-10 dataset/ground truth/321.txt
+/NWPU VHR-10 dataset/ground truth/322.txt
+/NWPU VHR-10 dataset/ground truth/323.txt
+/NWPU VHR-10 dataset/ground truth/324.txt
+/NWPU VHR-10 dataset/ground truth/325.txt
+/NWPU VHR-10 dataset/ground truth/326.txt
+/NWPU VHR-10 dataset/ground truth/327.txt
+/NWPU VHR-10 dataset/ground truth/328.txt
+/NWPU VHR-10 dataset/ground truth/329.txt
+/NWPU VHR-10 dataset/ground truth/330.txt
+/NWPU VHR-10 dataset/ground truth/331.txt
+/NWPU VHR-10 dataset/ground truth/332.txt
+/NWPU VHR-10 dataset/ground truth/333.txt
+/NWPU VHR-10 dataset/ground truth/334.txt
+/NWPU VHR-10 dataset/ground truth/335.txt
+/NWPU VHR-10 dataset/ground truth/336.txt
+/NWPU VHR-10 dataset/ground truth/337.txt
+/NWPU VHR-10 dataset/ground truth/338.txt
+/NWPU VHR-10 dataset/ground truth/339.txt
+/NWPU VHR-10 dataset/ground truth/340.txt
+/NWPU VHR-10 dataset/ground truth/341.txt
+/NWPU VHR-10 dataset/ground truth/342.txt
+/NWPU VHR-10 dataset/ground truth/343.txt
+/NWPU VHR-10 dataset/ground truth/344.txt
+/NWPU VHR-10 dataset/ground truth/345.txt
+/NWPU VHR-10 dataset/ground truth/346.txt
+/NWPU VHR-10 dataset/ground truth/347.txt
+/NWPU VHR-10 dataset/ground truth/348.txt
+/NWPU VHR-10 dataset/ground truth/349.txt
+/NWPU VHR-10 dataset/ground truth/350.txt
+/NWPU VHR-10 dataset/ground truth/351.txt
+/NWPU VHR-10 dataset/ground truth/352.txt
+/NWPU VHR-10 dataset/ground truth/353.txt
+/NWPU VHR-10 dataset/ground truth/354.txt
+/NWPU VHR-10 dataset/ground truth/355.txt
+/NWPU VHR-10 dataset/ground truth/356.txt
+/NWPU VHR-10 dataset/ground truth/357.txt
+/NWPU VHR-10 dataset/ground truth/358.txt
+/NWPU VHR-10 dataset/ground truth/359.txt
+/NWPU VHR-10 dataset/ground truth/360.txt
+/NWPU VHR-10 dataset/ground truth/361.txt
+/NWPU VHR-10 dataset/ground truth/362.txt
+/NWPU VHR-10 dataset/ground truth/363.txt
+/NWPU VHR-10 dataset/ground truth/364.txt
+/NWPU VHR-10 dataset/ground truth/365.txt
+/NWPU VHR-10 dataset/ground truth/366.txt
+/NWPU VHR-10 dataset/ground truth/367.txt
+/NWPU VHR-10 dataset/ground truth/368.txt
+/NWPU VHR-10 dataset/ground truth/369.txt
+/NWPU VHR-10 dataset/ground truth/370.txt
+/NWPU VHR-10 dataset/ground truth/371.txt
+/NWPU VHR-10 dataset/ground truth/372.txt
+/NWPU VHR-10 dataset/ground truth/373.txt
+/NWPU VHR-10 dataset/ground truth/374.txt
+/NWPU VHR-10 dataset/ground truth/375.txt
+/NWPU VHR-10 dataset/ground truth/376.txt
+/NWPU VHR-10 dataset/ground truth/377.txt
+/NWPU VHR-10 dataset/ground truth/378.txt
+/NWPU VHR-10 dataset/ground truth/379.txt
+/NWPU VHR-10 dataset/ground truth/380.txt
+/NWPU VHR-10 dataset/ground truth/381.txt
+/NWPU VHR-10 dataset/ground truth/382.txt
+/NWPU VHR-10 dataset/ground truth/383.txt
+/NWPU VHR-10 dataset/ground truth/384.txt
+/NWPU VHR-10 dataset/ground truth/385.txt
+/NWPU VHR-10 dataset/ground truth/386.txt
+/NWPU VHR-10 dataset/ground truth/387.txt
+/NWPU VHR-10 dataset/ground truth/388.txt
+/NWPU VHR-10 dataset/ground truth/389.txt
+/NWPU VHR-10 dataset/ground truth/390.txt
+/NWPU VHR-10 dataset/ground truth/391.txt
+/NWPU VHR-10 dataset/ground truth/392.txt
+/NWPU VHR-10 dataset/ground truth/393.txt
+/NWPU VHR-10 dataset/ground truth/394.txt
+/NWPU VHR-10 dataset/ground truth/395.txt
+/NWPU VHR-10 dataset/ground truth/396.txt
+/NWPU VHR-10 dataset/ground truth/397.txt
+/NWPU VHR-10 dataset/ground truth/398.txt
+/NWPU VHR-10 dataset/ground truth/399.txt
+/NWPU VHR-10 dataset/ground truth/400.txt
+/NWPU VHR-10 dataset/ground truth/401.txt
+/NWPU VHR-10 dataset/ground truth/402.txt
+/NWPU VHR-10 dataset/ground truth/403.txt
+/NWPU VHR-10 dataset/ground truth/404.txt
+/NWPU VHR-10 dataset/ground truth/405.txt
+/NWPU VHR-10 dataset/ground truth/406.txt
+/NWPU VHR-10 dataset/ground truth/407.txt
+/NWPU VHR-10 dataset/ground truth/408.txt
+/NWPU VHR-10 dataset/ground truth/409.txt
+/NWPU VHR-10 dataset/ground truth/410.txt
+/NWPU VHR-10 dataset/ground truth/411.txt
+/NWPU VHR-10 dataset/ground truth/412.txt
+/NWPU VHR-10 dataset/ground truth/413.txt
+/NWPU VHR-10 dataset/ground truth/414.txt
+/NWPU VHR-10 dataset/ground truth/415.txt
+/NWPU VHR-10 dataset/ground truth/416.txt
+/NWPU VHR-10 dataset/ground truth/417.txt
+/NWPU VHR-10 dataset/ground truth/418.txt
+/NWPU VHR-10 dataset/ground truth/419.txt
+/NWPU VHR-10 dataset/ground truth/420.txt
+/NWPU VHR-10 dataset/ground truth/421.txt
+/NWPU VHR-10 dataset/ground truth/422.txt
+/NWPU VHR-10 dataset/ground truth/423.txt
+/NWPU VHR-10 dataset/ground truth/424.txt
+/NWPU VHR-10 dataset/ground truth/425.txt
+/NWPU VHR-10 dataset/ground truth/426.txt
+/NWPU VHR-10 dataset/ground truth/427.txt
+/NWPU VHR-10 dataset/ground truth/428.txt
+/NWPU VHR-10 dataset/ground truth/429.txt
+/NWPU VHR-10 dataset/ground truth/430.txt
+/NWPU VHR-10 dataset/ground truth/431.txt
+/NWPU VHR-10 dataset/ground truth/432.txt
+/NWPU VHR-10 dataset/ground truth/433.txt
+/NWPU VHR-10 dataset/ground truth/434.txt
+/NWPU VHR-10 dataset/ground truth/435.txt
+/NWPU VHR-10 dataset/ground truth/436.txt
+/NWPU VHR-10 dataset/ground truth/437.txt
+/NWPU VHR-10 dataset/ground truth/438.txt
+/NWPU VHR-10 dataset/ground truth/439.txt
+/NWPU VHR-10 dataset/ground truth/440.txt
+/NWPU VHR-10 dataset/ground truth/441.txt
+/NWPU VHR-10 dataset/ground truth/442.txt
+/NWPU VHR-10 dataset/ground truth/443.txt
+/NWPU VHR-10 dataset/ground truth/444.txt
+/NWPU VHR-10 dataset/ground truth/445.txt
+/NWPU VHR-10 dataset/ground truth/446.txt
+/NWPU VHR-10 dataset/ground truth/447.txt
+/NWPU VHR-10 dataset/ground truth/448.txt
+/NWPU VHR-10 dataset/ground truth/449.txt
+/NWPU VHR-10 dataset/ground truth/450.txt
+/NWPU VHR-10 dataset/ground truth/451.txt
+/NWPU VHR-10 dataset/ground truth/452.txt
+/NWPU VHR-10 dataset/ground truth/453.txt
+/NWPU VHR-10 dataset/ground truth/454.txt
+/NWPU VHR-10 dataset/ground truth/455.txt
+/NWPU VHR-10 dataset/ground truth/456.txt
+/NWPU VHR-10 dataset/ground truth/457.txt
+/NWPU VHR-10 dataset/ground truth/458.txt
+/NWPU VHR-10 dataset/ground truth/459.txt
+/NWPU VHR-10 dataset/ground truth/460.txt
+/NWPU VHR-10 dataset/ground truth/461.txt
+/NWPU VHR-10 dataset/ground truth/462.txt
+/NWPU VHR-10 dataset/ground truth/463.txt
+/NWPU VHR-10 dataset/ground truth/464.txt
+/NWPU VHR-10 dataset/ground truth/465.txt
+/NWPU VHR-10 dataset/ground truth/466.txt
+/NWPU VHR-10 dataset/ground truth/467.txt
+/NWPU VHR-10 dataset/ground truth/468.txt
+/NWPU VHR-10 dataset/ground truth/469.txt
+/NWPU VHR-10 dataset/ground truth/470.txt
+/NWPU VHR-10 dataset/ground truth/471.txt
+/NWPU VHR-10 dataset/ground truth/472.txt
+/NWPU VHR-10 dataset/ground truth/473.txt
+/NWPU VHR-10 dataset/ground truth/474.txt
+/NWPU VHR-10 dataset/ground truth/475.txt
+/NWPU VHR-10 dataset/ground truth/476.txt
+/NWPU VHR-10 dataset/ground truth/477.txt
+/NWPU VHR-10 dataset/ground truth/478.txt
+/NWPU VHR-10 dataset/ground truth/479.txt
+/NWPU VHR-10 dataset/ground truth/480.txt
+/NWPU VHR-10 dataset/ground truth/481.txt
+/NWPU VHR-10 dataset/ground truth/482.txt
+/NWPU VHR-10 dataset/ground truth/483.txt
+/NWPU VHR-10 dataset/ground truth/484.txt
+/NWPU VHR-10 dataset/ground truth/485.txt
+/NWPU VHR-10 dataset/ground truth/486.txt
+/NWPU VHR-10 dataset/ground truth/487.txt
+/NWPU VHR-10 dataset/ground truth/488.txt
+/NWPU VHR-10 dataset/ground truth/489.txt
+/NWPU VHR-10 dataset/ground truth/490.txt
+/NWPU VHR-10 dataset/ground truth/491.txt
+/NWPU VHR-10 dataset/ground truth/492.txt
+/NWPU VHR-10 dataset/ground truth/493.txt
+/NWPU VHR-10 dataset/ground truth/494.txt
+/NWPU VHR-10 dataset/ground truth/495.txt
+/NWPU VHR-10 dataset/ground truth/496.txt
+/NWPU VHR-10 dataset/ground truth/497.txt
+/NWPU VHR-10 dataset/ground truth/498.txt
+/NWPU VHR-10 dataset/ground truth/499.txt
+/NWPU VHR-10 dataset/ground truth/500.txt
+/NWPU VHR-10 dataset/ground truth/501.txt
+/NWPU VHR-10 dataset/ground truth/502.txt
+/NWPU VHR-10 dataset/ground truth/503.txt
+/NWPU VHR-10 dataset/ground truth/504.txt
+/NWPU VHR-10 dataset/ground truth/505.txt
+/NWPU VHR-10 dataset/ground truth/506.txt
+/NWPU VHR-10 dataset/ground truth/507.txt
+/NWPU VHR-10 dataset/ground truth/508.txt
+/NWPU VHR-10 dataset/ground truth/509.txt
+/NWPU VHR-10 dataset/ground truth/510.txt
+/NWPU VHR-10 dataset/ground truth/511.txt
+/NWPU VHR-10 dataset/ground truth/512.txt
+/NWPU VHR-10 dataset/ground truth/513.txt
+/NWPU VHR-10 dataset/ground truth/514.txt
+/NWPU VHR-10 dataset/ground truth/515.txt
+/NWPU VHR-10 dataset/ground truth/516.txt
+/NWPU VHR-10 dataset/ground truth/517.txt
+/NWPU VHR-10 dataset/ground truth/518.txt
+/NWPU VHR-10 dataset/ground truth/519.txt
+/NWPU VHR-10 dataset/ground truth/520.txt
+/NWPU VHR-10 dataset/ground truth/521.txt
+/NWPU VHR-10 dataset/ground truth/522.txt
+/NWPU VHR-10 dataset/ground truth/523.txt
+/NWPU VHR-10 dataset/ground truth/524.txt
+/NWPU VHR-10 dataset/ground truth/525.txt
+/NWPU VHR-10 dataset/ground truth/526.txt
+/NWPU VHR-10 dataset/ground truth/527.txt
+/NWPU VHR-10 dataset/ground truth/528.txt
+/NWPU VHR-10 dataset/ground truth/529.txt
+/NWPU VHR-10 dataset/ground truth/530.txt
+/NWPU VHR-10 dataset/ground truth/531.txt
+/NWPU VHR-10 dataset/ground truth/532.txt
+/NWPU VHR-10 dataset/ground truth/533.txt
+/NWPU VHR-10 dataset/ground truth/534.txt
+/NWPU VHR-10 dataset/ground truth/535.txt
+/NWPU VHR-10 dataset/ground truth/536.txt
+/NWPU VHR-10 dataset/ground truth/537.txt
+/NWPU VHR-10 dataset/ground truth/538.txt
+/NWPU VHR-10 dataset/ground truth/539.txt
+/NWPU VHR-10 dataset/ground truth/540.txt
+/NWPU VHR-10 dataset/ground truth/541.txt
+/NWPU VHR-10 dataset/ground truth/542.txt
+/NWPU VHR-10 dataset/ground truth/543.txt
+/NWPU VHR-10 dataset/ground truth/544.txt
+/NWPU VHR-10 dataset/ground truth/545.txt
+/NWPU VHR-10 dataset/ground truth/546.txt
+/NWPU VHR-10 dataset/ground truth/547.txt
+/NWPU VHR-10 dataset/ground truth/548.txt
+/NWPU VHR-10 dataset/ground truth/549.txt
+/NWPU VHR-10 dataset/ground truth/550.txt
+/NWPU VHR-10 dataset/ground truth/551.txt
+/NWPU VHR-10 dataset/ground truth/552.txt
+/NWPU VHR-10 dataset/ground truth/553.txt
+/NWPU VHR-10 dataset/ground truth/554.txt
+/NWPU VHR-10 dataset/ground truth/555.txt
+/NWPU VHR-10 dataset/ground truth/556.txt
+/NWPU VHR-10 dataset/ground truth/557.txt
+/NWPU VHR-10 dataset/ground truth/558.txt
+/NWPU VHR-10 dataset/ground truth/559.txt
+/NWPU VHR-10 dataset/ground truth/560.txt
+/NWPU VHR-10 dataset/ground truth/561.txt
+/NWPU VHR-10 dataset/ground truth/562.txt
+/NWPU VHR-10 dataset/ground truth/563.txt
+/NWPU VHR-10 dataset/ground truth/564.txt
+/NWPU VHR-10 dataset/ground truth/565.txt
+/NWPU VHR-10 dataset/ground truth/566.txt
+/NWPU VHR-10 dataset/ground truth/567.txt
+/NWPU VHR-10 dataset/ground truth/568.txt
+/NWPU VHR-10 dataset/ground truth/569.txt
+/NWPU VHR-10 dataset/ground truth/570.txt
+/NWPU VHR-10 dataset/ground truth/571.txt
+/NWPU VHR-10 dataset/ground truth/572.txt
+/NWPU VHR-10 dataset/ground truth/573.txt
+/NWPU VHR-10 dataset/ground truth/574.txt
+/NWPU VHR-10 dataset/ground truth/575.txt
+/NWPU VHR-10 dataset/ground truth/576.txt
+/NWPU VHR-10 dataset/ground truth/577.txt
+/NWPU VHR-10 dataset/ground truth/578.txt
+/NWPU VHR-10 dataset/ground truth/579.txt
+/NWPU VHR-10 dataset/ground truth/580.txt
+/NWPU VHR-10 dataset/ground truth/581.txt
+/NWPU VHR-10 dataset/ground truth/582.txt
+/NWPU VHR-10 dataset/ground truth/583.txt
+/NWPU VHR-10 dataset/ground truth/584.txt
+/NWPU VHR-10 dataset/ground truth/585.txt
+/NWPU VHR-10 dataset/ground truth/586.txt
+/NWPU VHR-10 dataset/ground truth/587.txt
+/NWPU VHR-10 dataset/ground truth/588.txt
+/NWPU VHR-10 dataset/ground truth/589.txt
+/NWPU VHR-10 dataset/ground truth/590.txt
+/NWPU VHR-10 dataset/ground truth/591.txt
+/NWPU VHR-10 dataset/ground truth/592.txt
+/NWPU VHR-10 dataset/ground truth/593.txt
+/NWPU VHR-10 dataset/ground truth/594.txt
+/NWPU VHR-10 dataset/ground truth/595.txt
+/NWPU VHR-10 dataset/ground truth/596.txt
+/NWPU VHR-10 dataset/ground truth/597.txt
+/NWPU VHR-10 dataset/ground truth/598.txt
+/NWPU VHR-10 dataset/ground truth/599.txt
+/NWPU VHR-10 dataset/ground truth/600.txt
+/NWPU VHR-10 dataset/ground truth/601.txt
+/NWPU VHR-10 dataset/ground truth/602.txt
+/NWPU VHR-10 dataset/ground truth/603.txt
+/NWPU VHR-10 dataset/ground truth/604.txt
+/NWPU VHR-10 dataset/ground truth/605.txt
+/NWPU VHR-10 dataset/ground truth/606.txt
+/NWPU VHR-10 dataset/ground truth/607.txt
+/NWPU VHR-10 dataset/ground truth/608.txt
+/NWPU VHR-10 dataset/ground truth/609.txt
+/NWPU VHR-10 dataset/ground truth/610.txt
+/NWPU VHR-10 dataset/ground truth/611.txt
+/NWPU VHR-10 dataset/ground truth/612.txt
+/NWPU VHR-10 dataset/ground truth/613.txt
+/NWPU VHR-10 dataset/ground truth/614.txt
+/NWPU VHR-10 dataset/ground truth/615.txt
+/NWPU VHR-10 dataset/ground truth/616.txt
+/NWPU VHR-10 dataset/ground truth/617.txt
+/NWPU VHR-10 dataset/ground truth/618.txt
+/NWPU VHR-10 dataset/ground truth/619.txt
+/NWPU VHR-10 dataset/ground truth/620.txt
+/NWPU VHR-10 dataset/ground truth/621.txt
+/NWPU VHR-10 dataset/ground truth/622.txt
+/NWPU VHR-10 dataset/ground truth/623.txt
+/NWPU VHR-10 dataset/ground truth/624.txt
+/NWPU VHR-10 dataset/ground truth/625.txt
+/NWPU VHR-10 dataset/ground truth/626.txt
+/NWPU VHR-10 dataset/ground truth/627.txt
+/NWPU VHR-10 dataset/ground truth/628.txt
+/NWPU VHR-10 dataset/ground truth/629.txt
+/NWPU VHR-10 dataset/ground truth/630.txt
+/NWPU VHR-10 dataset/ground truth/631.txt
+/NWPU VHR-10 dataset/ground truth/632.txt
+/NWPU VHR-10 dataset/ground truth/633.txt
+/NWPU VHR-10 dataset/ground truth/634.txt
+/NWPU VHR-10 dataset/ground truth/635.txt
+/NWPU VHR-10 dataset/ground truth/636.txt
+/NWPU VHR-10 dataset/ground truth/637.txt
+/NWPU VHR-10 dataset/ground truth/638.txt
+/NWPU VHR-10 dataset/ground truth/639.txt
+/NWPU VHR-10 dataset/ground truth/640.txt
+/NWPU VHR-10 dataset/ground truth/641.txt
+/NWPU VHR-10 dataset/ground truth/642.txt
+/NWPU VHR-10 dataset/ground truth/643.txt
+/NWPU VHR-10 dataset/ground truth/644.txt
+/NWPU VHR-10 dataset/ground truth/645.txt
+/NWPU VHR-10 dataset/ground truth/646.txt
+/NWPU VHR-10 dataset/ground truth/647.txt
+/NWPU VHR-10 dataset/ground truth/648.txt
+/NWPU VHR-10 dataset/ground truth/649.txt
+/NWPU VHR-10 dataset/ground truth/650.txt
+/NWPU VHR-10 dataset/negative image set/001.jpg
+/NWPU VHR-10 dataset/negative image set/002.jpg
+/NWPU VHR-10 dataset/negative image set/003.jpg
+/NWPU VHR-10 dataset/negative image set/004.jpg
+/NWPU VHR-10 dataset/negative image set/005.jpg
+/NWPU VHR-10 dataset/negative image set/006.jpg
+/NWPU VHR-10 dataset/negative image set/007.jpg
+/NWPU VHR-10 dataset/negative image set/008.jpg
+/NWPU VHR-10 dataset/negative image set/009.jpg
+/NWPU VHR-10 dataset/negative image set/010.jpg
+/NWPU VHR-10 dataset/negative image set/011.jpg
+/NWPU VHR-10 dataset/negative image set/012.jpg
+/NWPU VHR-10 dataset/negative image set/013.jpg
+/NWPU VHR-10 dataset/negative image set/014.jpg
+/NWPU VHR-10 dataset/negative image set/015.jpg
+/NWPU VHR-10 dataset/negative image set/016.jpg
+/NWPU VHR-10 dataset/negative image set/017.jpg
+/NWPU VHR-10 dataset/negative image set/018.jpg
+/NWPU VHR-10 dataset/negative image set/019.jpg
+/NWPU VHR-10 dataset/negative image set/020.jpg
+/NWPU VHR-10 dataset/negative image set/021.jpg
+/NWPU VHR-10 dataset/negative image set/022.jpg
+/NWPU VHR-10 dataset/negative image set/023.jpg
+/NWPU VHR-10 dataset/negative image set/024.jpg
+/NWPU VHR-10 dataset/negative image set/025.jpg
+/NWPU VHR-10 dataset/negative image set/026.jpg
+/NWPU VHR-10 dataset/negative image set/027.jpg
+/NWPU VHR-10 dataset/negative image set/028.jpg
+/NWPU VHR-10 dataset/negative image set/029.jpg
+/NWPU VHR-10 dataset/negative image set/030.jpg
+/NWPU VHR-10 dataset/negative image set/031.jpg
+/NWPU VHR-10 dataset/negative image set/032.jpg
+/NWPU VHR-10 dataset/negative image set/033.jpg
+/NWPU VHR-10 dataset/negative image set/034.jpg
+/NWPU VHR-10 dataset/negative image set/035.jpg
+/NWPU VHR-10 dataset/negative image set/036.jpg
+/NWPU VHR-10 dataset/negative image set/037.jpg
+/NWPU VHR-10 dataset/negative image set/038.jpg
+/NWPU VHR-10 dataset/negative image set/039.jpg
+/NWPU VHR-10 dataset/negative image set/040.jpg
+/NWPU VHR-10 dataset/negative image set/041.jpg
+/NWPU VHR-10 dataset/negative image set/042.jpg
+/NWPU VHR-10 dataset/negative image set/043.jpg
+/NWPU VHR-10 dataset/negative image set/044.jpg
+/NWPU VHR-10 dataset/negative image set/045.jpg
+/NWPU VHR-10 dataset/negative image set/046.jpg
+/NWPU VHR-10 dataset/negative image set/047.jpg
+/NWPU VHR-10 dataset/negative image set/048.jpg
+/NWPU VHR-10 dataset/negative image set/049.jpg
+/NWPU VHR-10 dataset/negative image set/050.jpg
+/NWPU VHR-10 dataset/negative image set/051.jpg
+/NWPU VHR-10 dataset/negative image set/052.jpg
+/NWPU VHR-10 dataset/negative image set/053.jpg
+/NWPU VHR-10 dataset/negative image set/054.jpg
+/NWPU VHR-10 dataset/negative image set/055.jpg
+/NWPU VHR-10 dataset/negative image set/056.jpg
+/NWPU VHR-10 dataset/negative image set/057.jpg
+/NWPU VHR-10 dataset/negative image set/058.jpg
+/NWPU VHR-10 dataset/negative image set/059.jpg
+/NWPU VHR-10 dataset/negative image set/060.jpg
+/NWPU VHR-10 dataset/negative image set/061.jpg
+/NWPU VHR-10 dataset/negative image set/062.jpg
+/NWPU VHR-10 dataset/negative image set/063.jpg
+/NWPU VHR-10 dataset/negative image set/064.jpg
+/NWPU VHR-10 dataset/negative image set/065.jpg
+/NWPU VHR-10 dataset/negative image set/066.jpg
+/NWPU VHR-10 dataset/negative image set/067.jpg
+/NWPU VHR-10 dataset/negative image set/068.jpg
+/NWPU VHR-10 dataset/negative image set/069.jpg
+/NWPU VHR-10 dataset/negative image set/070.jpg
+/NWPU VHR-10 dataset/negative image set/071.jpg
+/NWPU VHR-10 dataset/negative image set/072.jpg
+/NWPU VHR-10 dataset/negative image set/073.jpg
+/NWPU VHR-10 dataset/negative image set/074.jpg
+/NWPU VHR-10 dataset/negative image set/075.jpg
+/NWPU VHR-10 dataset/negative image set/076.jpg
+/NWPU VHR-10 dataset/negative image set/077.jpg
+/NWPU VHR-10 dataset/negative image set/078.jpg
+/NWPU VHR-10 dataset/negative image set/079.jpg
+/NWPU VHR-10 dataset/negative image set/080.jpg
+/NWPU VHR-10 dataset/negative image set/081.jpg
+/NWPU VHR-10 dataset/negative image set/082.jpg
+/NWPU VHR-10 dataset/negative image set/083.jpg
+/NWPU VHR-10 dataset/negative image set/084.jpg
+/NWPU VHR-10 dataset/negative image set/085.jpg
+/NWPU VHR-10 dataset/negative image set/086.jpg
+/NWPU VHR-10 dataset/negative image set/087.jpg
+/NWPU VHR-10 dataset/negative image set/088.jpg
+/NWPU VHR-10 dataset/negative image set/089.jpg
+/NWPU VHR-10 dataset/negative image set/090.jpg
+/NWPU VHR-10 dataset/negative image set/091.jpg
+/NWPU VHR-10 dataset/negative image set/092.jpg
+/NWPU VHR-10 dataset/negative image set/093.jpg
+/NWPU VHR-10 dataset/negative image set/094.jpg
+/NWPU VHR-10 dataset/negative image set/095.jpg
+/NWPU VHR-10 dataset/negative image set/096.jpg
+/NWPU VHR-10 dataset/negative image set/097.jpg
+/NWPU VHR-10 dataset/negative image set/098.jpg
+/NWPU VHR-10 dataset/negative image set/099.jpg
+/NWPU VHR-10 dataset/negative image set/100.jpg
+/NWPU VHR-10 dataset/negative image set/101.jpg
+/NWPU VHR-10 dataset/negative image set/102.jpg
+/NWPU VHR-10 dataset/negative image set/103.jpg
+/NWPU VHR-10 dataset/negative image set/104.jpg
+/NWPU VHR-10 dataset/negative image set/105.jpg
+/NWPU VHR-10 dataset/negative image set/106.jpg
+/NWPU VHR-10 dataset/negative image set/107.jpg
+/NWPU VHR-10 dataset/negative image set/108.jpg
+/NWPU VHR-10 dataset/negative image set/109.jpg
+/NWPU VHR-10 dataset/negative image set/110.jpg
+/NWPU VHR-10 dataset/negative image set/111.jpg
+/NWPU VHR-10 dataset/negative image set/112.jpg
+/NWPU VHR-10 dataset/negative image set/113.jpg
+/NWPU VHR-10 dataset/negative image set/114.jpg
+/NWPU VHR-10 dataset/negative image set/115.jpg
+/NWPU VHR-10 dataset/negative image set/116.jpg
+/NWPU VHR-10 dataset/negative image set/117.jpg
+/NWPU VHR-10 dataset/negative image set/118.jpg
+/NWPU VHR-10 dataset/negative image set/119.jpg
+/NWPU VHR-10 dataset/negative image set/120.jpg
+/NWPU VHR-10 dataset/negative image set/121.jpg
+/NWPU VHR-10 dataset/negative image set/122.jpg
+/NWPU VHR-10 dataset/negative image set/123.jpg
+/NWPU VHR-10 dataset/negative image set/124.jpg
+/NWPU VHR-10 dataset/negative image set/125.jpg
+/NWPU VHR-10 dataset/negative image set/126.jpg
+/NWPU VHR-10 dataset/negative image set/127.jpg
+/NWPU VHR-10 dataset/negative image set/128.jpg
+/NWPU VHR-10 dataset/negative image set/129.jpg
+/NWPU VHR-10 dataset/negative image set/130.jpg
+/NWPU VHR-10 dataset/negative image set/131.jpg
+/NWPU VHR-10 dataset/negative image set/132.jpg
+/NWPU VHR-10 dataset/negative image set/133.jpg
+/NWPU VHR-10 dataset/negative image set/134.jpg
+/NWPU VHR-10 dataset/negative image set/135.jpg
+/NWPU VHR-10 dataset/negative image set/136.jpg
+/NWPU VHR-10 dataset/negative image set/137.jpg
+/NWPU VHR-10 dataset/negative image set/138.jpg
+/NWPU VHR-10 dataset/negative image set/139.jpg
+/NWPU VHR-10 dataset/negative image set/140.jpg
+/NWPU VHR-10 dataset/negative image set/141.jpg
+/NWPU VHR-10 dataset/negative image set/142.jpg
+/NWPU VHR-10 dataset/negative image set/143.jpg
+/NWPU VHR-10 dataset/negative image set/144.jpg
+/NWPU VHR-10 dataset/negative image set/145.jpg
+/NWPU VHR-10 dataset/negative image set/146.jpg
+/NWPU VHR-10 dataset/negative image set/147.jpg
+/NWPU VHR-10 dataset/negative image set/148.jpg
+/NWPU VHR-10 dataset/negative image set/149.jpg
+/NWPU VHR-10 dataset/negative image set/150.jpg
+/NWPU VHR-10 dataset/positive image set/001.jpg
+/NWPU VHR-10 dataset/positive image set/002.jpg
+/NWPU VHR-10 dataset/positive image set/003.jpg
+/NWPU VHR-10 dataset/positive image set/004.jpg
+/NWPU VHR-10 dataset/positive image set/005.jpg
+/NWPU VHR-10 dataset/positive image set/006.jpg
+/NWPU VHR-10 dataset/positive image set/007.jpg
+/NWPU VHR-10 dataset/positive image set/008.jpg
+/NWPU VHR-10 dataset/positive image set/009.jpg
+/NWPU VHR-10 dataset/positive image set/010.jpg
+/NWPU VHR-10 dataset/positive image set/011.jpg
+/NWPU VHR-10 dataset/positive image set/012.jpg
+/NWPU VHR-10 dataset/positive image set/013.jpg
+/NWPU VHR-10 dataset/positive image set/014.jpg
+/NWPU VHR-10 dataset/positive image set/015.jpg
+/NWPU VHR-10 dataset/positive image set/016.jpg
+/NWPU VHR-10 dataset/positive image set/017.jpg
+/NWPU VHR-10 dataset/positive image set/018.jpg
+/NWPU VHR-10 dataset/positive image set/019.jpg
+/NWPU VHR-10 dataset/positive image set/020.jpg
+/NWPU VHR-10 dataset/positive image set/021.jpg
+/NWPU VHR-10 dataset/positive image set/022.jpg
+/NWPU VHR-10 dataset/positive image set/023.jpg
+/NWPU VHR-10 dataset/positive image set/024.jpg
+/NWPU VHR-10 dataset/positive image set/025.jpg
+/NWPU VHR-10 dataset/positive image set/026.jpg
+/NWPU VHR-10 dataset/positive image set/027.jpg
+/NWPU VHR-10 dataset/positive image set/028.jpg
+/NWPU VHR-10 dataset/positive image set/029.jpg
+/NWPU VHR-10 dataset/positive image set/030.jpg
+/NWPU VHR-10 dataset/positive image set/031.jpg
+/NWPU VHR-10 dataset/positive image set/032.jpg
+/NWPU VHR-10 dataset/positive image set/033.jpg
+/NWPU VHR-10 dataset/positive image set/034.jpg
+/NWPU VHR-10 dataset/positive image set/035.jpg
+/NWPU VHR-10 dataset/positive image set/036.jpg
+/NWPU VHR-10 dataset/positive image set/037.jpg
+/NWPU VHR-10 dataset/positive image set/038.jpg
+/NWPU VHR-10 dataset/positive image set/039.jpg
+/NWPU VHR-10 dataset/positive image set/040.jpg
+/NWPU VHR-10 dataset/positive image set/041.jpg
+/NWPU VHR-10 dataset/positive image set/042.jpg
+/NWPU VHR-10 dataset/positive image set/043.jpg
+/NWPU VHR-10 dataset/positive image set/044.jpg
+/NWPU VHR-10 dataset/positive image set/045.jpg
+/NWPU VHR-10 dataset/positive image set/046.jpg
+/NWPU VHR-10 dataset/positive image set/047.jpg
+/NWPU VHR-10 dataset/positive image set/048.jpg
+/NWPU VHR-10 dataset/positive image set/049.jpg
+/NWPU VHR-10 dataset/positive image set/050.jpg
+/NWPU VHR-10 dataset/positive image set/051.jpg
+/NWPU VHR-10 dataset/positive image set/052.jpg
+/NWPU VHR-10 dataset/positive image set/053.jpg
+/NWPU VHR-10 dataset/positive image set/054.jpg
+/NWPU VHR-10 dataset/positive image set/055.jpg
+/NWPU VHR-10 dataset/positive image set/056.jpg
+/NWPU VHR-10 dataset/positive image set/057.jpg
+/NWPU VHR-10 dataset/positive image set/058.jpg
+/NWPU VHR-10 dataset/positive image set/059.jpg
+/NWPU VHR-10 dataset/positive image set/060.jpg
+/NWPU VHR-10 dataset/positive image set/061.jpg
+/NWPU VHR-10 dataset/positive image set/062.jpg
+/NWPU VHR-10 dataset/positive image set/063.jpg
+/NWPU VHR-10 dataset/positive image set/064.jpg
+/NWPU VHR-10 dataset/positive image set/065.jpg
+/NWPU VHR-10 dataset/positive image set/066.jpg
+/NWPU VHR-10 dataset/positive image set/067.jpg
+/NWPU VHR-10 dataset/positive image set/068.jpg
+/NWPU VHR-10 dataset/positive image set/069.jpg
+/NWPU VHR-10 dataset/positive image set/070.jpg
+/NWPU VHR-10 dataset/positive image set/071.jpg
+/NWPU VHR-10 dataset/positive image set/072.jpg
+/NWPU VHR-10 dataset/positive image set/073.jpg
+/NWPU VHR-10 dataset/positive image set/074.jpg
+/NWPU VHR-10 dataset/positive image set/075.jpg
+/NWPU VHR-10 dataset/positive image set/076.jpg
+/NWPU VHR-10 dataset/positive image set/077.jpg
+/NWPU VHR-10 dataset/positive image set/078.jpg
+/NWPU VHR-10 dataset/positive image set/079.jpg
+/NWPU VHR-10 dataset/positive image set/080.jpg
+/NWPU VHR-10 dataset/positive image set/081.jpg
+/NWPU VHR-10 dataset/positive image set/082.jpg
+/NWPU VHR-10 dataset/positive image set/083.jpg
+/NWPU VHR-10 dataset/positive image set/084.jpg
+/NWPU VHR-10 dataset/positive image set/085.jpg
+/NWPU VHR-10 dataset/positive image set/086.jpg
+/NWPU VHR-10 dataset/positive image set/087.jpg
+/NWPU VHR-10 dataset/positive image set/088.jpg
+/NWPU VHR-10 dataset/positive image set/089.jpg
+/NWPU VHR-10 dataset/positive image set/090.jpg
+/NWPU VHR-10 dataset/positive image set/091.jpg
+/NWPU VHR-10 dataset/positive image set/092.jpg
+/NWPU VHR-10 dataset/positive image set/093.jpg
+/NWPU VHR-10 dataset/positive image set/094.jpg
+/NWPU VHR-10 dataset/positive image set/095.jpg
+/NWPU VHR-10 dataset/positive image set/096.jpg
+/NWPU VHR-10 dataset/positive image set/097.jpg
+/NWPU VHR-10 dataset/positive image set/098.jpg
+/NWPU VHR-10 dataset/positive image set/099.jpg
+/NWPU VHR-10 dataset/positive image set/100.jpg
+/NWPU VHR-10 dataset/positive image set/101.jpg
+/NWPU VHR-10 dataset/positive image set/102.jpg
+/NWPU VHR-10 dataset/positive image set/103.jpg
+/NWPU VHR-10 dataset/positive image set/104.jpg
+/NWPU VHR-10 dataset/positive image set/105.jpg
+/NWPU VHR-10 dataset/positive image set/106.jpg
+/NWPU VHR-10 dataset/positive image set/107.jpg
+/NWPU VHR-10 dataset/positive image set/108.jpg
+/NWPU VHR-10 dataset/positive image set/109.jpg
+/NWPU VHR-10 dataset/positive image set/110.jpg
+/NWPU VHR-10 dataset/positive image set/111.jpg
+/NWPU VHR-10 dataset/positive image set/112.jpg
+/NWPU VHR-10 dataset/positive image set/113.jpg
+/NWPU VHR-10 dataset/positive image set/114.jpg
+/NWPU VHR-10 dataset/positive image set/115.jpg
+/NWPU VHR-10 dataset/positive image set/116.jpg
+/NWPU VHR-10 dataset/positive image set/117.jpg
+/NWPU VHR-10 dataset/positive image set/118.jpg
+/NWPU VHR-10 dataset/positive image set/119.jpg
+/NWPU VHR-10 dataset/positive image set/120.jpg
+/NWPU VHR-10 dataset/positive image set/121.jpg
+/NWPU VHR-10 dataset/positive image set/122.jpg
+/NWPU VHR-10 dataset/positive image set/123.jpg
+/NWPU VHR-10 dataset/positive image set/124.jpg
+/NWPU VHR-10 dataset/positive image set/125.jpg
+/NWPU VHR-10 dataset/positive image set/126.jpg
+/NWPU VHR-10 dataset/positive image set/127.jpg
+/NWPU VHR-10 dataset/positive image set/128.jpg
+/NWPU VHR-10 dataset/positive image set/129.jpg
+/NWPU VHR-10 dataset/positive image set/130.jpg
+/NWPU VHR-10 dataset/positive image set/131.jpg
+/NWPU VHR-10 dataset/positive image set/132.jpg
+/NWPU VHR-10 dataset/positive image set/133.jpg
+/NWPU VHR-10 dataset/positive image set/134.jpg
+/NWPU VHR-10 dataset/positive image set/135.jpg
+/NWPU VHR-10 dataset/positive image set/136.jpg
+/NWPU VHR-10 dataset/positive image set/137.jpg
+/NWPU VHR-10 dataset/positive image set/138.jpg
+/NWPU VHR-10 dataset/positive image set/139.jpg
+/NWPU VHR-10 dataset/positive image set/140.jpg
+/NWPU VHR-10 dataset/positive image set/141.jpg
+/NWPU VHR-10 dataset/positive image set/142.jpg
+/NWPU VHR-10 dataset/positive image set/143.jpg
+/NWPU VHR-10 dataset/positive image set/144.jpg
+/NWPU VHR-10 dataset/positive image set/145.jpg
+/NWPU VHR-10 dataset/positive image set/146.jpg
+/NWPU VHR-10 dataset/positive image set/147.jpg
+/NWPU VHR-10 dataset/positive image set/148.jpg
+/NWPU VHR-10 dataset/positive image set/149.jpg
+/NWPU VHR-10 dataset/positive image set/150.jpg
+/NWPU VHR-10 dataset/positive image set/151.jpg
+/NWPU VHR-10 dataset/positive image set/152.jpg
+/NWPU VHR-10 dataset/positive image set/153.jpg
+/NWPU VHR-10 dataset/positive image set/154.jpg
+/NWPU VHR-10 dataset/positive image set/155.jpg
+/NWPU VHR-10 dataset/positive image set/156.jpg
+/NWPU VHR-10 dataset/positive image set/157.jpg
+/NWPU VHR-10 dataset/positive image set/158.jpg
+/NWPU VHR-10 dataset/positive image set/159.jpg
+/NWPU VHR-10 dataset/positive image set/160.jpg
+/NWPU VHR-10 dataset/positive image set/161.jpg
+/NWPU VHR-10 dataset/positive image set/162.jpg
+/NWPU VHR-10 dataset/positive image set/163.jpg
+/NWPU VHR-10 dataset/positive image set/164.jpg
+/NWPU VHR-10 dataset/positive image set/165.jpg
+/NWPU VHR-10 dataset/positive image set/166.jpg
+/NWPU VHR-10 dataset/positive image set/167.jpg
+/NWPU VHR-10 dataset/positive image set/168.jpg
+/NWPU VHR-10 dataset/positive image set/169.jpg
+/NWPU VHR-10 dataset/positive image set/170.jpg
+/NWPU VHR-10 dataset/positive image set/171.jpg
+/NWPU VHR-10 dataset/positive image set/172.jpg
+/NWPU VHR-10 dataset/positive image set/173.jpg
+/NWPU VHR-10 dataset/positive image set/174.jpg
+/NWPU VHR-10 dataset/positive image set/175.jpg
+/NWPU VHR-10 dataset/positive image set/176.jpg
+/NWPU VHR-10 dataset/positive image set/177.jpg
+/NWPU VHR-10 dataset/positive image set/178.jpg
+/NWPU VHR-10 dataset/positive image set/179.jpg
+/NWPU VHR-10 dataset/positive image set/180.jpg
+/NWPU VHR-10 dataset/positive image set/181.jpg
+/NWPU VHR-10 dataset/positive image set/182.jpg
+/NWPU VHR-10 dataset/positive image set/183.jpg
+/NWPU VHR-10 dataset/positive image set/184.jpg
+/NWPU VHR-10 dataset/positive image set/185.jpg
+/NWPU VHR-10 dataset/positive image set/186.jpg
+/NWPU VHR-10 dataset/positive image set/187.jpg
+/NWPU VHR-10 dataset/positive image set/188.jpg
+/NWPU VHR-10 dataset/positive image set/189.jpg
+/NWPU VHR-10 dataset/positive image set/190.jpg
+/NWPU VHR-10 dataset/positive image set/191.jpg
+/NWPU VHR-10 dataset/positive image set/192.jpg
+/NWPU VHR-10 dataset/positive image set/193.jpg
+/NWPU VHR-10 dataset/positive image set/194.jpg
+/NWPU VHR-10 dataset/positive image set/195.jpg
+/NWPU VHR-10 dataset/positive image set/196.jpg
+/NWPU VHR-10 dataset/positive image set/197.jpg
+/NWPU VHR-10 dataset/positive image set/198.jpg
+/NWPU VHR-10 dataset/positive image set/199.jpg
+/NWPU VHR-10 dataset/positive image set/200.jpg
+/NWPU VHR-10 dataset/positive image set/201.jpg
+/NWPU VHR-10 dataset/positive image set/202.jpg
+/NWPU VHR-10 dataset/positive image set/203.jpg
+/NWPU VHR-10 dataset/positive image set/204.jpg
+/NWPU VHR-10 dataset/positive image set/205.jpg
+/NWPU VHR-10 dataset/positive image set/206.jpg
+/NWPU VHR-10 dataset/positive image set/207.jpg
+/NWPU VHR-10 dataset/positive image set/208.jpg
+/NWPU VHR-10 dataset/positive image set/209.jpg
+/NWPU VHR-10 dataset/positive image set/210.jpg
+/NWPU VHR-10 dataset/positive image set/211.jpg
+/NWPU VHR-10 dataset/positive image set/212.jpg
+/NWPU VHR-10 dataset/positive image set/213.jpg
+/NWPU VHR-10 dataset/positive image set/214.jpg
+/NWPU VHR-10 dataset/positive image set/215.jpg
+/NWPU VHR-10 dataset/positive image set/216.jpg
+/NWPU VHR-10 dataset/positive image set/217.jpg
+/NWPU VHR-10 dataset/positive image set/218.jpg
+/NWPU VHR-10 dataset/positive image set/219.jpg
+/NWPU VHR-10 dataset/positive image set/220.jpg
+/NWPU VHR-10 dataset/positive image set/221.jpg
+/NWPU VHR-10 dataset/positive image set/222.jpg
+/NWPU VHR-10 dataset/positive image set/223.jpg
+/NWPU VHR-10 dataset/positive image set/224.jpg
+/NWPU VHR-10 dataset/positive image set/225.jpg
+/NWPU VHR-10 dataset/positive image set/226.jpg
+/NWPU VHR-10 dataset/positive image set/227.jpg
+/NWPU VHR-10 dataset/positive image set/228.jpg
+/NWPU VHR-10 dataset/positive image set/229.jpg
+/NWPU VHR-10 dataset/positive image set/230.jpg
+/NWPU VHR-10 dataset/positive image set/231.jpg
+/NWPU VHR-10 dataset/positive image set/232.jpg
+/NWPU VHR-10 dataset/positive image set/233.jpg
+/NWPU VHR-10 dataset/positive image set/234.jpg
+/NWPU VHR-10 dataset/positive image set/235.jpg
+/NWPU VHR-10 dataset/positive image set/236.jpg
+/NWPU VHR-10 dataset/positive image set/237.jpg
+/NWPU VHR-10 dataset/positive image set/238.jpg
+/NWPU VHR-10 dataset/positive image set/239.jpg
+/NWPU VHR-10 dataset/positive image set/240.jpg
+/NWPU VHR-10 dataset/positive image set/241.jpg
+/NWPU VHR-10 dataset/positive image set/242.jpg
+/NWPU VHR-10 dataset/positive image set/243.jpg
+/NWPU VHR-10 dataset/positive image set/244.jpg
+/NWPU VHR-10 dataset/positive image set/245.jpg
+/NWPU VHR-10 dataset/positive image set/246.jpg
+/NWPU VHR-10 dataset/positive image set/247.jpg
+/NWPU VHR-10 dataset/positive image set/248.jpg
+/NWPU VHR-10 dataset/positive image set/249.jpg
+/NWPU VHR-10 dataset/positive image set/250.jpg
+/NWPU VHR-10 dataset/positive image set/251.jpg
+/NWPU VHR-10 dataset/positive image set/252.jpg
+/NWPU VHR-10 dataset/positive image set/253.jpg
+/NWPU VHR-10 dataset/positive image set/254.jpg
+/NWPU VHR-10 dataset/positive image set/255.jpg
+/NWPU VHR-10 dataset/positive image set/256.jpg
+/NWPU VHR-10 dataset/positive image set/257.jpg
+/NWPU VHR-10 dataset/positive image set/258.jpg
+/NWPU VHR-10 dataset/positive image set/259.jpg
+/NWPU VHR-10 dataset/positive image set/260.jpg
+/NWPU VHR-10 dataset/positive image set/261.jpg
+/NWPU VHR-10 dataset/positive image set/262.jpg
+/NWPU VHR-10 dataset/positive image set/263.jpg
+/NWPU VHR-10 dataset/positive image set/264.jpg
+/NWPU VHR-10 dataset/positive image set/265.jpg
+/NWPU VHR-10 dataset/positive image set/266.jpg
+/NWPU VHR-10 dataset/positive image set/267.jpg
+/NWPU VHR-10 dataset/positive image set/268.jpg
+/NWPU VHR-10 dataset/positive image set/269.jpg
+/NWPU VHR-10 dataset/positive image set/270.jpg
+/NWPU VHR-10 dataset/positive image set/271.jpg
+/NWPU VHR-10 dataset/positive image set/272.jpg
+/NWPU VHR-10 dataset/positive image set/273.jpg
+/NWPU VHR-10 dataset/positive image set/274.jpg
+/NWPU VHR-10 dataset/positive image set/275.jpg
+/NWPU VHR-10 dataset/positive image set/276.jpg
+/NWPU VHR-10 dataset/positive image set/277.jpg
+/NWPU VHR-10 dataset/positive image set/278.jpg
+/NWPU VHR-10 dataset/positive image set/279.jpg
+/NWPU VHR-10 dataset/positive image set/280.jpg
+/NWPU VHR-10 dataset/positive image set/281.jpg
+/NWPU VHR-10 dataset/positive image set/282.jpg
+/NWPU VHR-10 dataset/positive image set/283.jpg
+/NWPU VHR-10 dataset/positive image set/284.jpg
+/NWPU VHR-10 dataset/positive image set/285.jpg
+/NWPU VHR-10 dataset/positive image set/286.jpg
+/NWPU VHR-10 dataset/positive image set/287.jpg
+/NWPU VHR-10 dataset/positive image set/288.jpg
+/NWPU VHR-10 dataset/positive image set/289.jpg
+/NWPU VHR-10 dataset/positive image set/290.jpg
+/NWPU VHR-10 dataset/positive image set/291.jpg
+/NWPU VHR-10 dataset/positive image set/292.jpg
+/NWPU VHR-10 dataset/positive image set/293.jpg
+/NWPU VHR-10 dataset/positive image set/294.jpg
+/NWPU VHR-10 dataset/positive image set/295.jpg
+/NWPU VHR-10 dataset/positive image set/296.jpg
+/NWPU VHR-10 dataset/positive image set/297.jpg
+/NWPU VHR-10 dataset/positive image set/298.jpg
+/NWPU VHR-10 dataset/positive image set/299.jpg
+/NWPU VHR-10 dataset/positive image set/300.jpg
+/NWPU VHR-10 dataset/positive image set/301.jpg
+/NWPU VHR-10 dataset/positive image set/302.jpg
+/NWPU VHR-10 dataset/positive image set/303.jpg
+/NWPU VHR-10 dataset/positive image set/304.jpg
+/NWPU VHR-10 dataset/positive image set/305.jpg
+/NWPU VHR-10 dataset/positive image set/306.jpg
+/NWPU VHR-10 dataset/positive image set/307.jpg
+/NWPU VHR-10 dataset/positive image set/308.jpg
+/NWPU VHR-10 dataset/positive image set/309.jpg
+/NWPU VHR-10 dataset/positive image set/310.jpg
+/NWPU VHR-10 dataset/positive image set/311.jpg
+/NWPU VHR-10 dataset/positive image set/312.jpg
+/NWPU VHR-10 dataset/positive image set/313.jpg
+/NWPU VHR-10 dataset/positive image set/314.jpg
+/NWPU VHR-10 dataset/positive image set/315.jpg
+/NWPU VHR-10 dataset/positive image set/316.jpg
+/NWPU VHR-10 dataset/positive image set/317.jpg
+/NWPU VHR-10 dataset/positive image set/318.jpg
+/NWPU VHR-10 dataset/positive image set/319.jpg
+/NWPU VHR-10 dataset/positive image set/320.jpg
+/NWPU VHR-10 dataset/positive image set/321.jpg
+/NWPU VHR-10 dataset/positive image set/322.jpg
+/NWPU VHR-10 dataset/positive image set/323.jpg
+/NWPU VHR-10 dataset/positive image set/324.jpg
+/NWPU VHR-10 dataset/positive image set/325.jpg
+/NWPU VHR-10 dataset/positive image set/326.jpg
+/NWPU VHR-10 dataset/positive image set/327.jpg
+/NWPU VHR-10 dataset/positive image set/328.jpg
+/NWPU VHR-10 dataset/positive image set/329.jpg
+/NWPU VHR-10 dataset/positive image set/330.jpg
+/NWPU VHR-10 dataset/positive image set/331.jpg
+/NWPU VHR-10 dataset/positive image set/332.jpg
+/NWPU VHR-10 dataset/positive image set/333.jpg
+/NWPU VHR-10 dataset/positive image set/334.jpg
+/NWPU VHR-10 dataset/positive image set/335.jpg
+/NWPU VHR-10 dataset/positive image set/336.jpg
+/NWPU VHR-10 dataset/positive image set/337.jpg
+/NWPU VHR-10 dataset/positive image set/338.jpg
+/NWPU VHR-10 dataset/positive image set/339.jpg
+/NWPU VHR-10 dataset/positive image set/340.jpg
+/NWPU VHR-10 dataset/positive image set/341.jpg
+/NWPU VHR-10 dataset/positive image set/342.jpg
+/NWPU VHR-10 dataset/positive image set/343.jpg
+/NWPU VHR-10 dataset/positive image set/344.jpg
+/NWPU VHR-10 dataset/positive image set/345.jpg
+/NWPU VHR-10 dataset/positive image set/346.jpg
+/NWPU VHR-10 dataset/positive image set/347.jpg
+/NWPU VHR-10 dataset/positive image set/348.jpg
+/NWPU VHR-10 dataset/positive image set/349.jpg
+/NWPU VHR-10 dataset/positive image set/350.jpg
+/NWPU VHR-10 dataset/positive image set/351.jpg
+/NWPU VHR-10 dataset/positive image set/352.jpg
+/NWPU VHR-10 dataset/positive image set/353.jpg
+/NWPU VHR-10 dataset/positive image set/354.jpg
+/NWPU VHR-10 dataset/positive image set/355.jpg
+/NWPU VHR-10 dataset/positive image set/356.jpg
+/NWPU VHR-10 dataset/positive image set/357.jpg
+/NWPU VHR-10 dataset/positive image set/358.jpg
+/NWPU VHR-10 dataset/positive image set/359.jpg
+/NWPU VHR-10 dataset/positive image set/360.jpg
+/NWPU VHR-10 dataset/positive image set/361.jpg
+/NWPU VHR-10 dataset/positive image set/362.jpg
+/NWPU VHR-10 dataset/positive image set/363.jpg
+/NWPU VHR-10 dataset/positive image set/364.jpg
+/NWPU VHR-10 dataset/positive image set/365.jpg
+/NWPU VHR-10 dataset/positive image set/366.jpg
+/NWPU VHR-10 dataset/positive image set/367.jpg
+/NWPU VHR-10 dataset/positive image set/368.jpg
+/NWPU VHR-10 dataset/positive image set/369.jpg
+/NWPU VHR-10 dataset/positive image set/370.jpg
+/NWPU VHR-10 dataset/positive image set/371.jpg
+/NWPU VHR-10 dataset/positive image set/372.jpg
+/NWPU VHR-10 dataset/positive image set/373.jpg
+/NWPU VHR-10 dataset/positive image set/374.jpg
+/NWPU VHR-10 dataset/positive image set/375.jpg
+/NWPU VHR-10 dataset/positive image set/376.jpg
+/NWPU VHR-10 dataset/positive image set/377.jpg
+/NWPU VHR-10 dataset/positive image set/378.jpg
+/NWPU VHR-10 dataset/positive image set/379.jpg
+/NWPU VHR-10 dataset/positive image set/380.jpg
+/NWPU VHR-10 dataset/positive image set/381.jpg
+/NWPU VHR-10 dataset/positive image set/382.jpg
+/NWPU VHR-10 dataset/positive image set/383.jpg
+/NWPU VHR-10 dataset/positive image set/384.jpg
+/NWPU VHR-10 dataset/positive image set/385.jpg
+/NWPU VHR-10 dataset/positive image set/386.jpg
+/NWPU VHR-10 dataset/positive image set/387.jpg
+/NWPU VHR-10 dataset/positive image set/388.jpg
+/NWPU VHR-10 dataset/positive image set/389.jpg
+/NWPU VHR-10 dataset/positive image set/390.jpg
+/NWPU VHR-10 dataset/positive image set/391.jpg
+/NWPU VHR-10 dataset/positive image set/392.jpg
+/NWPU VHR-10 dataset/positive image set/393.jpg
+/NWPU VHR-10 dataset/positive image set/394.jpg
+/NWPU VHR-10 dataset/positive image set/395.jpg
+/NWPU VHR-10 dataset/positive image set/396.jpg
+/NWPU VHR-10 dataset/positive image set/397.jpg
+/NWPU VHR-10 dataset/positive image set/398.jpg
+/NWPU VHR-10 dataset/positive image set/399.jpg
+/NWPU VHR-10 dataset/positive image set/400.jpg
+/NWPU VHR-10 dataset/positive image set/401.jpg
+/NWPU VHR-10 dataset/positive image set/402.jpg
+/NWPU VHR-10 dataset/positive image set/403.jpg
+/NWPU VHR-10 dataset/positive image set/404.jpg
+/NWPU VHR-10 dataset/positive image set/405.jpg
+/NWPU VHR-10 dataset/positive image set/406.jpg
+/NWPU VHR-10 dataset/positive image set/407.jpg
+/NWPU VHR-10 dataset/positive image set/408.jpg
+/NWPU VHR-10 dataset/positive image set/409.jpg
+/NWPU VHR-10 dataset/positive image set/410.jpg
+/NWPU VHR-10 dataset/positive image set/411.jpg
+/NWPU VHR-10 dataset/positive image set/412.jpg
+/NWPU VHR-10 dataset/positive image set/413.jpg
+/NWPU VHR-10 dataset/positive image set/414.jpg
+/NWPU VHR-10 dataset/positive image set/415.jpg
+/NWPU VHR-10 dataset/positive image set/416.jpg
+/NWPU VHR-10 dataset/positive image set/417.jpg
+/NWPU VHR-10 dataset/positive image set/418.jpg
+/NWPU VHR-10 dataset/positive image set/419.jpg
+/NWPU VHR-10 dataset/positive image set/420.jpg
+/NWPU VHR-10 dataset/positive image set/421.jpg
+/NWPU VHR-10 dataset/positive image set/422.jpg
+/NWPU VHR-10 dataset/positive image set/423.jpg
+/NWPU VHR-10 dataset/positive image set/424.jpg
+/NWPU VHR-10 dataset/positive image set/425.jpg
+/NWPU VHR-10 dataset/positive image set/426.jpg
+/NWPU VHR-10 dataset/positive image set/427.jpg
+/NWPU VHR-10 dataset/positive image set/428.jpg
+/NWPU VHR-10 dataset/positive image set/429.jpg
+/NWPU VHR-10 dataset/positive image set/430.jpg
+/NWPU VHR-10 dataset/positive image set/431.jpg
+/NWPU VHR-10 dataset/positive image set/432.jpg
+/NWPU VHR-10 dataset/positive image set/433.jpg
+/NWPU VHR-10 dataset/positive image set/434.jpg
+/NWPU VHR-10 dataset/positive image set/435.jpg
+/NWPU VHR-10 dataset/positive image set/436.jpg
+/NWPU VHR-10 dataset/positive image set/437.jpg
+/NWPU VHR-10 dataset/positive image set/438.jpg
+/NWPU VHR-10 dataset/positive image set/439.jpg
+/NWPU VHR-10 dataset/positive image set/440.jpg
+/NWPU VHR-10 dataset/positive image set/441.jpg
+/NWPU VHR-10 dataset/positive image set/442.jpg
+/NWPU VHR-10 dataset/positive image set/443.jpg
+/NWPU VHR-10 dataset/positive image set/444.jpg
+/NWPU VHR-10 dataset/positive image set/445.jpg
+/NWPU VHR-10 dataset/positive image set/446.jpg
+/NWPU VHR-10 dataset/positive image set/447.jpg
+/NWPU VHR-10 dataset/positive image set/448.jpg
+/NWPU VHR-10 dataset/positive image set/449.jpg
+/NWPU VHR-10 dataset/positive image set/450.jpg
+/NWPU VHR-10 dataset/positive image set/451.jpg
+/NWPU VHR-10 dataset/positive image set/452.jpg
+/NWPU VHR-10 dataset/positive image set/453.jpg
+/NWPU VHR-10 dataset/positive image set/454.jpg
+/NWPU VHR-10 dataset/positive image set/455.jpg
+/NWPU VHR-10 dataset/positive image set/456.jpg
+/NWPU VHR-10 dataset/positive image set/457.jpg
+/NWPU VHR-10 dataset/positive image set/458.jpg
+/NWPU VHR-10 dataset/positive image set/459.jpg
+/NWPU VHR-10 dataset/positive image set/460.jpg
+/NWPU VHR-10 dataset/positive image set/461.jpg
+/NWPU VHR-10 dataset/positive image set/462.jpg
+/NWPU VHR-10 dataset/positive image set/463.jpg
+/NWPU VHR-10 dataset/positive image set/464.jpg
+/NWPU VHR-10 dataset/positive image set/465.jpg
+/NWPU VHR-10 dataset/positive image set/466.jpg
+/NWPU VHR-10 dataset/positive image set/467.jpg
+/NWPU VHR-10 dataset/positive image set/468.jpg
+/NWPU VHR-10 dataset/positive image set/469.jpg
+/NWPU VHR-10 dataset/positive image set/470.jpg
+/NWPU VHR-10 dataset/positive image set/471.jpg
+/NWPU VHR-10 dataset/positive image set/472.jpg
+/NWPU VHR-10 dataset/positive image set/473.jpg
+/NWPU VHR-10 dataset/positive image set/474.jpg
+/NWPU VHR-10 dataset/positive image set/475.jpg
+/NWPU VHR-10 dataset/positive image set/476.jpg
+/NWPU VHR-10 dataset/positive image set/477.jpg
+/NWPU VHR-10 dataset/positive image set/478.jpg
+/NWPU VHR-10 dataset/positive image set/479.jpg
+/NWPU VHR-10 dataset/positive image set/480.jpg
+/NWPU VHR-10 dataset/positive image set/481.jpg
+/NWPU VHR-10 dataset/positive image set/482.jpg
+/NWPU VHR-10 dataset/positive image set/483.jpg
+/NWPU VHR-10 dataset/positive image set/484.jpg
+/NWPU VHR-10 dataset/positive image set/485.jpg
+/NWPU VHR-10 dataset/positive image set/486.jpg
+/NWPU VHR-10 dataset/positive image set/487.jpg
+/NWPU VHR-10 dataset/positive image set/488.jpg
+/NWPU VHR-10 dataset/positive image set/489.jpg
+/NWPU VHR-10 dataset/positive image set/490.jpg
+/NWPU VHR-10 dataset/positive image set/491.jpg
+/NWPU VHR-10 dataset/positive image set/492.jpg
+/NWPU VHR-10 dataset/positive image set/493.jpg
+/NWPU VHR-10 dataset/positive image set/494.jpg
+/NWPU VHR-10 dataset/positive image set/495.jpg
+/NWPU VHR-10 dataset/positive image set/496.jpg
+/NWPU VHR-10 dataset/positive image set/497.jpg
+/NWPU VHR-10 dataset/positive image set/498.jpg
+/NWPU VHR-10 dataset/positive image set/499.jpg
+/NWPU VHR-10 dataset/positive image set/500.jpg
+/NWPU VHR-10 dataset/positive image set/501.jpg
+/NWPU VHR-10 dataset/positive image set/502.jpg
+/NWPU VHR-10 dataset/positive image set/503.jpg
+/NWPU VHR-10 dataset/positive image set/504.jpg
+/NWPU VHR-10 dataset/positive image set/505.jpg
+/NWPU VHR-10 dataset/positive image set/506.jpg
+/NWPU VHR-10 dataset/positive image set/507.jpg
+/NWPU VHR-10 dataset/positive image set/508.jpg
+/NWPU VHR-10 dataset/positive image set/509.jpg
+/NWPU VHR-10 dataset/positive image set/510.jpg
+/NWPU VHR-10 dataset/positive image set/511.jpg
+/NWPU VHR-10 dataset/positive image set/512.jpg
+/NWPU VHR-10 dataset/positive image set/513.jpg
+/NWPU VHR-10 dataset/positive image set/514.jpg
+/NWPU VHR-10 dataset/positive image set/515.jpg
+/NWPU VHR-10 dataset/positive image set/516.jpg
+/NWPU VHR-10 dataset/positive image set/517.jpg
+/NWPU VHR-10 dataset/positive image set/518.jpg
+/NWPU VHR-10 dataset/positive image set/519.jpg
+/NWPU VHR-10 dataset/positive image set/520.jpg
+/NWPU VHR-10 dataset/positive image set/521.jpg
+/NWPU VHR-10 dataset/positive image set/522.jpg
+/NWPU VHR-10 dataset/positive image set/523.jpg
+/NWPU VHR-10 dataset/positive image set/524.jpg
+/NWPU VHR-10 dataset/positive image set/525.jpg
+/NWPU VHR-10 dataset/positive image set/526.jpg
+/NWPU VHR-10 dataset/positive image set/527.jpg
+/NWPU VHR-10 dataset/positive image set/528.jpg
+/NWPU VHR-10 dataset/positive image set/529.jpg
+/NWPU VHR-10 dataset/positive image set/530.jpg
+/NWPU VHR-10 dataset/positive image set/531.jpg
+/NWPU VHR-10 dataset/positive image set/532.jpg
+/NWPU VHR-10 dataset/positive image set/533.jpg
+/NWPU VHR-10 dataset/positive image set/534.jpg
+/NWPU VHR-10 dataset/positive image set/535.jpg
+/NWPU VHR-10 dataset/positive image set/536.jpg
+/NWPU VHR-10 dataset/positive image set/537.jpg
+/NWPU VHR-10 dataset/positive image set/538.jpg
+/NWPU VHR-10 dataset/positive image set/539.jpg
+/NWPU VHR-10 dataset/positive image set/540.jpg
+/NWPU VHR-10 dataset/positive image set/541.jpg
+/NWPU VHR-10 dataset/positive image set/542.jpg
+/NWPU VHR-10 dataset/positive image set/543.jpg
+/NWPU VHR-10 dataset/positive image set/544.jpg
+/NWPU VHR-10 dataset/positive image set/545.jpg
+/NWPU VHR-10 dataset/positive image set/546.jpg
+/NWPU VHR-10 dataset/positive image set/547.jpg
+/NWPU VHR-10 dataset/positive image set/548.jpg
+/NWPU VHR-10 dataset/positive image set/549.jpg
+/NWPU VHR-10 dataset/positive image set/550.jpg
+/NWPU VHR-10 dataset/positive image set/551.jpg
+/NWPU VHR-10 dataset/positive image set/552.jpg
+/NWPU VHR-10 dataset/positive image set/553.jpg
+/NWPU VHR-10 dataset/positive image set/554.jpg
+/NWPU VHR-10 dataset/positive image set/555.jpg
+/NWPU VHR-10 dataset/positive image set/556.jpg
+/NWPU VHR-10 dataset/positive image set/557.jpg
+/NWPU VHR-10 dataset/positive image set/558.jpg
+/NWPU VHR-10 dataset/positive image set/559.jpg
+/NWPU VHR-10 dataset/positive image set/560.jpg
+/NWPU VHR-10 dataset/positive image set/561.jpg
+/NWPU VHR-10 dataset/positive image set/562.jpg
+/NWPU VHR-10 dataset/positive image set/563.jpg
+/NWPU VHR-10 dataset/positive image set/564.jpg
+/NWPU VHR-10 dataset/positive image set/565.jpg
+/NWPU VHR-10 dataset/positive image set/566.jpg
+/NWPU VHR-10 dataset/positive image set/567.jpg
+/NWPU VHR-10 dataset/positive image set/568.jpg
+/NWPU VHR-10 dataset/positive image set/569.jpg
+/NWPU VHR-10 dataset/positive image set/570.jpg
+/NWPU VHR-10 dataset/positive image set/571.jpg
+/NWPU VHR-10 dataset/positive image set/572.jpg
+/NWPU VHR-10 dataset/positive image set/573.jpg
+/NWPU VHR-10 dataset/positive image set/574.jpg
+/NWPU VHR-10 dataset/positive image set/575.jpg
+/NWPU VHR-10 dataset/positive image set/576.jpg
+/NWPU VHR-10 dataset/positive image set/577.jpg
+/NWPU VHR-10 dataset/positive image set/578.jpg
+/NWPU VHR-10 dataset/positive image set/579.jpg
+/NWPU VHR-10 dataset/positive image set/580.jpg
+/NWPU VHR-10 dataset/positive image set/581.jpg
+/NWPU VHR-10 dataset/positive image set/582.jpg
+/NWPU VHR-10 dataset/positive image set/583.jpg
+/NWPU VHR-10 dataset/positive image set/584.jpg
+/NWPU VHR-10 dataset/positive image set/585.jpg
+/NWPU VHR-10 dataset/positive image set/586.jpg
+/NWPU VHR-10 dataset/positive image set/587.jpg
+/NWPU VHR-10 dataset/positive image set/588.jpg
+/NWPU VHR-10 dataset/positive image set/589.jpg
+/NWPU VHR-10 dataset/positive image set/590.jpg
+/NWPU VHR-10 dataset/positive image set/591.jpg
+/NWPU VHR-10 dataset/positive image set/592.jpg
+/NWPU VHR-10 dataset/positive image set/593.jpg
+/NWPU VHR-10 dataset/positive image set/594.jpg
+/NWPU VHR-10 dataset/positive image set/595.jpg
+/NWPU VHR-10 dataset/positive image set/596.jpg
+/NWPU VHR-10 dataset/positive image set/597.jpg
+/NWPU VHR-10 dataset/positive image set/598.jpg
+/NWPU VHR-10 dataset/positive image set/599.jpg
+/NWPU VHR-10 dataset/positive image set/600.jpg
+/NWPU VHR-10 dataset/positive image set/601.jpg
+/NWPU VHR-10 dataset/positive image set/602.jpg
+/NWPU VHR-10 dataset/positive image set/603.jpg
+/NWPU VHR-10 dataset/positive image set/604.jpg
+/NWPU VHR-10 dataset/positive image set/605.jpg
+/NWPU VHR-10 dataset/positive image set/606.jpg
+/NWPU VHR-10 dataset/positive image set/607.jpg
+/NWPU VHR-10 dataset/positive image set/608.jpg
+/NWPU VHR-10 dataset/positive image set/609.jpg
+/NWPU VHR-10 dataset/positive image set/610.jpg
+/NWPU VHR-10 dataset/positive image set/611.jpg
+/NWPU VHR-10 dataset/positive image set/612.jpg
+/NWPU VHR-10 dataset/positive image set/613.jpg
+/NWPU VHR-10 dataset/positive image set/614.jpg
+/NWPU VHR-10 dataset/positive image set/615.jpg
+/NWPU VHR-10 dataset/positive image set/616.jpg
+/NWPU VHR-10 dataset/positive image set/617.jpg
+/NWPU VHR-10 dataset/positive image set/618.jpg
+/NWPU VHR-10 dataset/positive image set/619.jpg
+/NWPU VHR-10 dataset/positive image set/620.jpg
+/NWPU VHR-10 dataset/positive image set/621.jpg
+/NWPU VHR-10 dataset/positive image set/622.jpg
+/NWPU VHR-10 dataset/positive image set/623.jpg
+/NWPU VHR-10 dataset/positive image set/624.jpg
+/NWPU VHR-10 dataset/positive image set/625.jpg
+/NWPU VHR-10 dataset/positive image set/626.jpg
+/NWPU VHR-10 dataset/positive image set/627.jpg
+/NWPU VHR-10 dataset/positive image set/628.jpg
+/NWPU VHR-10 dataset/positive image set/629.jpg
+/NWPU VHR-10 dataset/positive image set/630.jpg
+/NWPU VHR-10 dataset/positive image set/631.jpg
+/NWPU VHR-10 dataset/positive image set/632.jpg
+/NWPU VHR-10 dataset/positive image set/633.jpg
+/NWPU VHR-10 dataset/positive image set/634.jpg
+/NWPU VHR-10 dataset/positive image set/635.jpg
+/NWPU VHR-10 dataset/positive image set/636.jpg
+/NWPU VHR-10 dataset/positive image set/637.jpg
+/NWPU VHR-10 dataset/positive image set/638.jpg
+/NWPU VHR-10 dataset/positive image set/639.jpg
+/NWPU VHR-10 dataset/positive image set/640.jpg
+/NWPU VHR-10 dataset/positive image set/641.jpg
+/NWPU VHR-10 dataset/positive image set/642.jpg
+/NWPU VHR-10 dataset/positive image set/643.jpg
+/NWPU VHR-10 dataset/positive image set/644.jpg
+/NWPU VHR-10 dataset/positive image set/645.jpg
+/NWPU VHR-10 dataset/positive image set/646.jpg
+/NWPU VHR-10 dataset/positive image set/647.jpg
+/NWPU VHR-10 dataset/positive image set/648.jpg
+/NWPU VHR-10 dataset/positive image set/649.jpg
+/NWPU VHR-10 dataset/positive image set/650.jpg
+/NWPU VHR-10 dataset/readme.txt
+
+/resultados do fire
+/resultados_finais
+/bbox_debug
+/bbox_debug_dior
+/bbox_debug_fire
+/datasets
+/evolution_gifs
+vis_predictions/
+core/pcl.pytorch/
+core/WSDDN-PyTorch/
+Outputs/
+data_fire.zip
+/Analise com melhor mAP/
+/Analise com treino com melhor val_loss/
+/histogram_results/
+/NWPU VHR-10 dataset/
+/data_dior/
+/results/
+/umap_comparison.png
+/final_results.txt
+/predictions.json
+/lab.ipynb
+/investigation_rollout.ipynb

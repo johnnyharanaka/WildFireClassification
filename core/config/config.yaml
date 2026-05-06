@@ -1,0 +1,268 @@
+# ── Datasets ──────────────────────────────────────────────────
+active_dataset: fire
+
+datasets:
+  fire:
+    name: Fire Detection
+    num_classes: 2
+    classes:
+      - Fire
+      - Not
+    data_path: data_fire
+    eval_metric: mAP
+    f1_average: binary
+  nwpu:
+    name: NWPU VHR-10
+    num_classes: 11
+    classes:
+      - airplane
+      - ship
+      - storage_tank
+      - baseball_diamond
+      - tennis_court
+      - basketball_court
+      - ground_track_field
+      - harbor
+      - bridge
+      - vehicle
+      - background
+    data_path: data_nwpu
+    eval_metric: CorLoc
+    f1_average: weighted
+  dior:
+    name: DIOR - Object Detection in Remote Sensing
+    num_classes: 20
+    classes:
+      - airplane
+      - airport
+      - baseball_diamond
+      - basketball_court
+      - bridge
+      - chaparral
+      - dense_residential
+      - forest
+      - freeway
+      - golf_course
+      - ground_track_field
+      - harbor
+      - industrial
+      - intersection
+      - medium_residential
+      - mobile_home_park
+      - overpass
+      - parking_lot
+      - sparse_residential
+      - tennis_court
+    data_path: data_dior
+    eval_metric: mAP
+    f1_average: weighted
+
+# ── Models ────────────────────────────────────────────────────
+models:
+  DinoV2_Small:
+    train_size: 224
+    img_size: 518
+    patch_size: 14
+    needs_attention_maps: true
+  DinoV2_Base:
+    train_size: 224
+    img_size: 518
+    patch_size: 14
+    needs_attention_maps: true
+  DinoV2RS_Small:
+    train_size: 224
+    img_size: 672
+    patch_size: 16
+    needs_attention_maps: true
+  DinoV2RS_Base:
+    train_size: 224
+    img_size: 672
+    patch_size: 16
+    needs_attention_maps: true
+  DinoV2RSL_Small:
+    train_size: 224
+    img_size: 672
+    patch_size: 16
+    needs_attention_maps: true
+    lora_r: 32
+    lora_alpha: 64
+  DinoV2RSL_Base:
+    train_size: 224
+    img_size: 672
+    patch_size: 16
+    needs_attention_maps: true
+    lora_r: 32
+    lora_alpha: 64
+  DinoV3_VitL16_SAT:
+    train_size: 224
+    img_size: 224
+    patch_size: 16
+    needs_attention_maps: true
+
+# ── Training ──────────────────────────────────────────────────
+defaults:
+  run_models:
+    - DinoV2RS_Small
+  pretrained: true
+  dropout: 0.2
+  batch_size: 8
+  # stages
+  epochs_stage1: 10
+  epochs_stage2: 10
+  skip_stage_one: false
+  freeze_backbone_stage2: true
+  stage1_metric: mAP       # mAP or val_loss
+  stage2_metric: val_loss   # mAP or val_loss
+  stage2_method: cls        # cls or knn
+  # bounding box / detection
+  min_confidence: 0.25
+  gradcam_threshold: 0.15
+  min_bbox_area: 1600
+  bbox_method: connectedcomponents
+  greedy_merge_enabled: true
+  greedy_iou_threshold: 0.1
+  greedy_distance_threshold: 50
+
+
+optimizers:
+  selected: adamw
+  adamw:
+    lr: 8.0e-05
+    weight_decay: 0.0002
+    betas:
+      - 0.9
+      - 0.999
+    eps: 1.0e-08
+  sgd:
+    lr: 1.0e-05
+    momentum: 0.9
+    weight_decay: 0.0001
+    nesterov: true
+
+scheduler:
+  enabled: true
+  selected: warm_restarts
+  cosine_annealing:
+    T_max: 5
+    eta_min: 5.0e-07
+  warm_restarts:
+    T_0: 5
+    T_mult: 1
+    eta_min: 5.0e-07
+
+loss:
+  selected: ce
+  ce:
+    label_smoothing: 0.1
+  focalLoss:
+    alpha: 0.25
+    gamma: 2.0
+
+contrastive:
+  use_classification_loss: true
+  classification_weight: 0.7
+  contrastive_weight: 0.3
+  selected: supcon
+  losses:
+    supcon:
+      temperature: 0.25
+      miner: none
+    triplet:
+      margin: 0.2
+      miner: semi-hard
+    center:
+      num_classes: 2
+      embedding_size: 128
+
+knn:
+  k: 50
+  temperature: 0.07
+
+multi_start:
+  enabled: true
+  eval_after_epochs: 4
+  min_threshold: 0.05
+  trials:
+    #- { lr: 8.0e-06, weight_decay: 1.0e-04 }
+    - { lr: 1.0e-05, weight_decay: 2.0e-04 }
+    - { lr: 3.0e-05, weight_decay: 2.0e-04 }
+    - { lr: 5.0e-05, weight_decay: 5.0e-04 }
+    - { lr: 8.0e-05, weight_decay: 5.0e-04 }
+    - { lr: 1.0e-04, weight_decay: 1.0e-03 }
+    #- { lr: 2.0e-04, weight_decay: 1.0e-03 }
+
+early_stopping:
+  enabled: true
+  patience: 2
+  delta: 0.0001
+
+checkpoint:
+  save_all_epochs: false
+
+# ── Augmentation ──────────────────────────────────────────────
+augmentation:
+  enabled: true
+  standard:
+    random_horizontal_flip:
+      enabled: true
+      probability: 0.5
+    random_vertical_flip:
+      enabled: true
+      probability: 0.5
+    color_jitter:
+      enabled: true
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
+      hue: 0.1
+      probability: 0.2
+    gaussian_blur:
+      enabled: false
+      probability: 0.1
+    random_solarize:
+      enabled: false
+      threshold: 128
+      probability: 0.2
+    random_grayscale:
+      enabled: false
+      probability: 0.2
+  normalization:
+    mean:
+      - 0.485
+      - 0.456
+      - 0.406
+    std:
+      - 0.229
+      - 0.224
+      - 0.225
+
+# ── Post-processing ──────────────────────────────────────────
+attention_rollout:
+  use_gradient_weighting: true
+  gradient_weight_scale: 0.2
+  use_gaussian_blur: false
+  gaussian_sigma: 3
+
+crf:
+  enabled: false
+  method: crf
+  iterations: 15
+  theta_xy: 90.0
+  w1: 12.0
+  w2: 7.0
+  sigma_x: 3.0
+  sigma_y: 3.0
+  sigma_rgb: 13.0
+  blur_kernel_size: 5
+  blur_sigma: 1.0
+
+# ── Visualization ─────────────────────────────────────────────
+embedding_visualization:
+  pca:
+    n_components_2d: 2
+    n_components_3d: 3
+  #umap:
+  #  n_neighbors: 15
+  #  min_dist: 0.1
+  #  metric: euclidean
+  #  random_state: 42
