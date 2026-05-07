@@ -12,9 +12,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 from core.config.config import get_config, log_info
-from .datasets import get_data_loaders
+from ..datasets import get_data_loaders
 from .vis_utils import VisUtils, compute_dynamic_threshold
-from .metrics import calculate_metric, calculate_CorLoc, calculate_map
+from ..metrics import calculate_metric, calculate_CorLoc, calculate_map
 from .gradcam import compute_gradcam, overlay_heatmap
 from .attention_rollout import compute_attention_rollout
 
@@ -796,8 +796,8 @@ def visualize_embeddings_from_json(json_path='bbox_debug/embeddings.json', retur
 
 
 if __name__ == "__main__":
-    from .engine import get_device
-    from .models import get_model
+    from ..training.engine import get_device
+    from ..models import get_model
 
     device = get_device()
     model = get_model("Swim_Small", num_classes=2, device=device)

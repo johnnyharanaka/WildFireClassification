@@ -48,7 +48,7 @@ class DinoV3Classifier(nn.Module):
             raise ValueError(f"Only dinov3_vitl16 is currently supported, got {model_name}")
 
         # Import DinoV3 backbone builder
-        dinov3_path = str(Path(__file__).parent / "dinov3")
+        dinov3_path = str(Path(__file__).parent.parent / "dinov3")
         if dinov3_path not in sys.path:
             sys.path.insert(0, dinov3_path)
 

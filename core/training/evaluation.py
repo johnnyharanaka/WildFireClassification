@@ -9,7 +9,7 @@ import torch.nn.functional as F
 from sklearn.metrics import f1_score
 from tqdm import tqdm
 
-from .config.config import get_active_dataset_config, get_config, log_info
+from ..config.config import get_active_dataset_config, get_config, log_info
 
 
 def eval_fn(model, features, tgt):
@@ -239,8 +239,8 @@ def test_epoch(model, test_iter, device, criterion, compute_map_metric: bool = F
 
         if compute_map_metric and eval_metric == 'mAP':
             try:
-                from .metrics import classification_predictions_to_detections, compute_map, format_map_results
-                from .nwpu_dataset import CLASS_MAPPING
+                from ..metrics import classification_predictions_to_detections, compute_map, format_map_results
+                from ..datasets.nwpu_dataset import CLASS_MAPPING
 
                 log_info("\nCalculating mAP metric...")
 
@@ -293,7 +293,7 @@ def evaluate_classification_metrics(model, device, batch_size=16, num_workers=0)
         dict: {'accuracy': float, 'f1': float}
     """
     from sklearn.metrics import accuracy_score
-    from .datasets import get_data_loaders
+    from ..datasets import get_data_loaders
 
     root_path = get_active_dataset_config('data_path') or get_active_dataset_config('root_path') or 'data/'
     data_loaders, _ = get_data_loaders(

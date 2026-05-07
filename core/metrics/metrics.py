@@ -7,8 +7,8 @@ import numpy as np
 import torch
 
 from core.config.config import log_info, get_config
-from core.vis_utils import VisUtils, compute_dynamic_threshold
-from core.attention_map import get_last_layer_attention
+from core.visualization.vis_utils import VisUtils, compute_dynamic_threshold
+from core.visualization.attention_map import get_last_layer_attention
 from core.config.config import get_active_dataset_config
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, confusion_matrix
 
@@ -405,7 +405,7 @@ def format_map_results(results: Dict, verbose: bool = True) -> str:
     Returns:
         Formatted string with results.
     """
-    from core.nwpu_dataset import CLASS_MAPPING
+    from core.datasets.nwpu_dataset import CLASS_MAPPING
 
     output = []
     output.append("="*60)
@@ -1085,7 +1085,7 @@ def evaluate_wsod(
                             # Apply CRF refinement if enabled
                             crf_config = get_config("crf") or {}
                             if crf_config.get('enabled', False):
-                                from core.gradcam import refine_heatmap_with_crf
+                                from core.visualization.gradcam import refine_heatmap_with_crf
                                 attn_np = refine_heatmap_with_crf(
                                     attn_np, image=None, use_crf=True, crf_config=crf_config
                                 )
@@ -1097,7 +1097,7 @@ def evaluate_wsod(
 
                             # Remove nested bboxes (same as debug.py)
                             if len(bbs_raw) > 1:
-                                from core.debug import remove_nested_bboxes
+                                from core.utils.debug import remove_nested_bboxes
                                 bbs_raw = remove_nested_bboxes(bbs_raw, containment_threshold=0.5)
 
                             # Add confidence to each bbox

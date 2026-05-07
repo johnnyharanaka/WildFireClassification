@@ -272,7 +272,7 @@ def create_nwpu_dataloaders(
     Returns:
         Tuple of (dataloaders, datasets).
     """
-    from core.datasets import _get_data_transforms
+    from core.datasets.datasets import _get_data_transforms
 
     if transform_dict is None:
         transform_dict = _get_data_transforms(img_size)

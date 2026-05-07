@@ -9,14 +9,14 @@ import torch
 import torch.nn.functional as F
 from tqdm import tqdm
 
-from .config.config import get_active_dataset_config, get_config, get_global_seed, get_root_path, log_info
-from .datasets import get_data_loaders
+from ..config.config import get_active_dataset_config, get_config, get_global_seed, get_root_path, log_info
+from ..datasets import get_data_loaders
 from .evaluation import val_epoch
-from .losses import get_loss, setup_contrastive_learning
+from ..losses import get_loss, setup_contrastive_learning
 from .lr_scheduler import EarlyStopping, get_optimizer, get_scheduler, get_optimizer_for_params, get_optimizer_with_lr
 from .contrastive_engine import compute_contrastive_metrics
-from .metrics import evaluate_wsod
-from .models import add_attn_maps
+from ..metrics import evaluate_wsod
+from ..models import add_attn_maps
 
 MODELS_PATH = "models/"
 

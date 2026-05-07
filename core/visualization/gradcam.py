@@ -11,8 +11,8 @@ from PIL import Image
 from typing import Optional, Dict
 
 from core.config.config import log_info
-from .crf_refiner import refine_heatmap
-from .models import Models
+from ..postproc.crf_refiner import refine_heatmap
+from ..models.models import Models
 
 
 def compute_gradcam(model, model_name, img_tensor, class_index=None):

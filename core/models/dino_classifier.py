@@ -13,7 +13,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional, Tuple
 
-from .dinov2.models.vision_transformer import vit_base, vit_large, vit_small
+from core.dinov2.models.vision_transformer import vit_base, vit_large, vit_small
 from .LoRA import LoRALayer, apply_lora_to_vit, init_lora_weights
 
 _DINO_CLASSIFIER_DIR = Path(__file__).parent
