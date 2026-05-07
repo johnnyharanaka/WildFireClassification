@@ -16,7 +16,7 @@ from typing import List, Optional, Tuple
 from core.dinov2.models.vision_transformer import vit_base, vit_large, vit_small
 from .LoRA import LoRALayer, apply_lora_to_vit, init_lora_weights
 
-_DINO_CLASSIFIER_DIR = Path(__file__).parent
+_DINO_CLASSIFIER_DIR = Path(__file__).parent.parent
 _MODELS_DIR = _DINO_CLASSIFIER_DIR / "original_models"
 
 
