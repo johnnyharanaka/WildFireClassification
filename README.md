@@ -122,8 +122,8 @@ python -c "import torch; print(torch.__version__)"
 python main.py --help
 ```
 
-### Step 5: Download Pre-trained Models (Optional)
-Pre-trained weights are included in the `models/` directory. Models are automatically downloaded on first use.
+### Step 5: Pre-trained Models
+Pre-trained weights are **not** included in this repository. Place your `.pth` files in a `models/` directory at the project root before running inference, or train from scratch with `python main.py --train`.
 
 ## Quick Start
 
@@ -157,6 +157,13 @@ python main.py --debug-bbox
 #### 6. Visualize Embeddings
 ```bash
 python main.py --embeddings
+```
+
+#### 7. Multi-Seed Training & Evaluation
+Train with multiple seeds and report mean ± std for all metrics:
+```bash
+uv run run_multi_seed.py --seeds 42 123 456 789 1234
+uv run run_multi_seed.py --model-name DinoV2RS_Small --seeds 42 123 456
 ```
 
 For more options and detailed arguments:
@@ -288,11 +295,12 @@ training:
 
 ## Datasets
 
+> **Note:** Datasets are not included in this repository. Obtain them separately and place them at the paths below (or update `core/config/config.yaml`).
+
 ### Fire Detection Dataset
 
-**Location:** `data_fire/`
+**Expected location:** `data_fire/`
 - **Classes:** 2 (Fire, Not Fire)
-- **Size:** ~250 MB
 - **Structure:**
   ```
   data_fire/
@@ -309,10 +317,9 @@ training:
 
 ### NWPU VHR-10 Dataset
 
-**Location:** `data_nwpu/`
+**Expected location:** `data_nwpu/`
 - **Classes:** 11 object types (airplane, ship, storage tank, swimming pool, etc.)
-- **Size:** ~94 MB (processed)
-- **Original:** NWPU VHR-10 remote sensing dataset
+- **Original:** NWPU VHR-10 remote sensing dataset (see [References](#references))
 - **Structure:**
   ```
   data_nwpu/
@@ -320,6 +327,8 @@ training:
   ├── Val/
   └── Test/
   ```
+
+Conversion helpers for both datasets are available in `utils/` (see `convert_fire_to_coco.py`, `convert_nwpu.py`, `convert_nwpu_to_coco.py`).
 
 ### Adding Custom Datasets
 
@@ -542,71 +551,79 @@ python main.py --embeddings
 FireClassification/
 ├── core/                              # Core application modules
 │   ├── __init__.py
-│   ├── engine.py (1,212 lines)       # Training loops & DETR training
+│   ├── engine.py                     # Training loops & DETR training
 │   ├── models.py                     # Model factory & architectures
 │   ├── dino_classifier.py            # DinoV2 classifier implementation
 │   ├── dinov3_classifier.py          # DinoV3 classifier implementation
-│   ├── vis.py (969 lines)            # Testing & visualization pipeline
-│   ├── vis_utils.py (1,017)          # Visualization utilities
+│   ├── vis.py                        # Testing & visualization pipeline
+│   ├── vis_utils.py                  # Visualization utilities
+│   ├── vis_graph.py                  # Graph-based visualization
 │   ├── datasets.py                   # Data loading & augmentation
+│   ├── nwpu_dataset.py               # NWPU VHR-10 dataset loader
 │   ├── evaluation.py                 # Evaluation framework
-│   ├── metrics.py (684 lines)        # Metric calculations
+│   ├── metrics.py                    # Metric calculations (CorLoc, mAP, F1)
 │   ├── losses.py                     # Focal, Contrastive losses
 │   ├── gradcam.py                    # GradCAM implementation
-│   ├── attention_rollout.py          # Attention visualization
+│   ├── attention_rollout.py          # Attention rollout
+│   ├── attention_map.py              # Attention map utilities
+│   ├── crf_refiner.py                # CRF post-processing
 │   ├── custom_models.py              # Custom architectures
-│   ├── debug.py (760 lines)          # Debugging utilities
+│   ├── debug.py                      # Debugging utilities
 │   ├── contrastive_engine.py         # Contrastive learning engine
-│   ├── cutler_detector.py            # CUTLER detector integration
+│   ├── ema.py                        # Exponential Moving Average
+│   ├── lr_scheduler.py               # Learning rate schedulers
+│   ├── LoRA.py                       # LoRA fine-tuning support
+│   ├── utils.py                      # Shared utilities
 │   ├── config/
 │   │   ├── config.yaml               # Configuration file
 │   │   └── config.py                 # Config loader
 │   ├── TSCAM/                        # Token Spatial CAM module
-│   ├── dinov2/                       # DINOv2 backbone
-│   └── dinov3/                       # DINOv3 (experimental)
+│   └── dinov2/                       # DINOv2 backbone (vendored)
 │
 ├── interface/                        # Python API
 │   ├── __init__.py
 │   └── api.py                        # FireClassificationInterface
 │
-├── data_fire/                        # Fire detection dataset (250 MB)
-│   ├── Train/, Val/, Test/
-│   └── Fire/, Not/ (subdirectories)
+├── tests/                            # Test suite (pytest)
+│   ├── conftest.py
+│   ├── test_datasets.py
+│   ├── test_engine.py
+│   ├── test_evaluation.py
+│   ├── test_losses.py
+│   └── test_metrics.py
 │
-├── data_nwpu/                        # NWPU VHR-10 dataset (94 MB)
-│   ├── Train/, Val/, Test/
-│   └── 11 object class directories
+├── utils/                            # Dataset conversion & analysis scripts
+│   ├── convert_fire_to_coco.py       # Fire dataset → COCO format
+│   ├── convert_nwpu.py               # NWPU pre-processing
+│   ├── convert_nwpu_to_coco.py       # NWPU → COCO format
+│   ├── convert_dior.py               # DIOR pre-processing
+│   ├── convert_dior_to_coco.py       # DIOR → COCO format
+│   ├── convert_model_rs.py           # Remote-sensing model conversion
+│   ├── compare_attention.py          # Attention comparison
+│   ├── histogram_iou.py              # IoU histogram analysis
+│   └── plot_iou.py                   # IoU plotting
 │
-├── models/                           # Pre-trained model weights (267 MB)
-│   ├── DinoV2RS_Small.pth
-│   ├── DinoV2_Small.pth
-│   └── DinoV2RS_Small_Bom.pth
-│
-├── results/                          # Inference outputs (526 subdirs)
-│   └── model_outputs/predictions
-│
-├── output/                           # Training artifacts
-│   ├── checkpoints/
-│   ├── runs/                         # TensorBoard logs
-│   └── logs/
-│
-├── utils/                            # Utility scripts
-├── pyproject.toml                    # Project configuration
 ├── main.py                           # Main CLI entry point
+├── run_multi_seed.py                 # Multi-seed training & eval (mean ± std)
+├── vis_bb_predictions.py             # Bounding-box visualization helper
+├── pyproject.toml                    # Project metadata & dependencies (uv)
+├── uv.lock                           # Locked dependency versions
 └── README.md                         # This file
 ```
 
+> Datasets (`data_fire/`, `data_nwpu/`), pre-trained weights (`models/`), inference results (`results/`), and training artifacts (`output/`) are excluded from version control via `.gitignore`. Provide them locally as described in the [Datasets](#datasets) and [Installation](#installation) sections.
+
 ### Core Module Descriptions
 
-| Module | Lines | Purpose |
-|--------|-------|---------|
-| `engine.py` | 1,212 | Training loops, validation, checkpoint saving, DETR cooperative training |
-| `models.py` | 995 | Model factory, architecture definitions, pre-training loading |
-| `dino_classifier.py` | 847 | DinoV2 classifier head, attention aggregation, feature extraction |
-| `vis_utils.py` | 1,017 | Heatmap visualization, bounding box drawing, annotation overlays |
-| `vis.py` | 969 | Model testing pipeline, inference wrapper, result aggregation |
-| `metrics.py` | 684 | CorLoc, mAP, F1-score calculations, confusion matrices |
-| `debug.py` | 760 | Bounding box visualization for debugging pseudo-labels |
+| Module | Purpose |
+|--------|---------|
+| `engine.py` | Training loops, validation, checkpoint saving, DETR cooperative training |
+| `models.py` | Model factory, architecture definitions, pre-training loading |
+| `dino_classifier.py` | DinoV2 classifier head, attention aggregation, feature extraction |
+| `vis_utils.py` | Heatmap visualization, bounding box drawing, annotation overlays |
+| `vis.py` | Model testing pipeline, inference wrapper, result aggregation |
+| `metrics.py` | CorLoc, mAP, F1-score calculations, confusion matrices |
+| `debug.py` | Bounding box visualization for debugging pseudo-labels |
 
 ## Results
 
@@ -622,11 +639,6 @@ The system achieves strong performance on both datasets:
 - **mAP:** Competitive with fully-supervised baselines
 - **Inference:** 50+ images/sec with visualization
 
-**Models Provided:**
-- DinoV2RS_Small: 89 MB (recommended for production)
-- DinoV2_Small: 90 MB
-- DinoV2RS_Small_Bom: 89 MB (experimental variant)
-
 ## Contributing
 
 ### Development Setup
@@ -640,6 +652,12 @@ The system achieves strong performance on both datasets:
 - Add docstrings to new functions
 - Include type hints where applicable
 - Test on both CPU and GPU
+
+### Running Tests
+```bash
+uv run pytest
+```
+Test suite lives under `tests/` and covers datasets, engine, evaluation, losses, and metrics.
 
 ## References
 
@@ -659,17 +677,6 @@ The system achieves strong performance on both datasets:
 ---
 
 **Project Status:** Active Development
-**Last Updated:** December 2024
-**License:** [Specify your license]
-**Author:** [Your name/organization]
+**Last Updated:** May 2026
 
-For questions or issues, please open a GitHub issue or contact the development team.
-
-## Recent Updates
-
-### December 2024
-- ✓ Removed ResNet models (focus on Vision Transformers only)
-- ✓ Streamlined codebase by removing GUI components
-- ✓ Enhanced Python API for programmatic access
-- ✓ Improved attention mechanism handling
-- ✓ Updated dependencies and documentation
+For questions or issues, please open a GitHub issue.
