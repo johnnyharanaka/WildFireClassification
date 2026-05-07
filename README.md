@@ -119,8 +119,28 @@ python -c "import torch; print(torch.__version__)"
 python main.py --help
 ```
 
-### Step 5: Pre-trained Models
-Pre-trained weights are **not** included in this repository. Place your `.pth` files in a `models/` directory at the project root before running inference, or train from scratch with `python main.py --train`.
+### Step 5: Pre-trained Models & Dataset
+Pre-trained weights and the fire dataset are **not** versioned in this repository. Download them from Google Drive:
+
+📦 [**Download models & dataset**](https://drive.google.com/drive/folders/1pu3-j3vwSWNg42jBk1RIblMMSW0sPZWp?usp=share_link)
+
+The shared folder contains:
+- `original_models/` → rename to `models/` (or copy its contents) and place at the project root
+- `data_fire/` → place directly at the project root
+
+Final layout:
+```
+FireClassification/
+├── models/           # from original_models/
+│   └── *.pth
+├── data_fire/        # fire detection dataset
+│   ├── Train/
+│   ├── Val/
+│   └── Test/
+└── ...
+```
+
+Alternatively, train from scratch with `python main.py --train`.
 
 ## Quick Start
 
@@ -299,7 +319,7 @@ training:
 
 ## Datasets
 
-> **Note:** Datasets are not included in this repository. Obtain them separately and place them at the paths below (or update `core/config/config.yaml`).
+> **Note:** Datasets are not included in this repository. The fire dataset is available in the [Google Drive folder](https://drive.google.com/drive/folders/1pu3-j3vwSWNg42jBk1RIblMMSW0sPZWp?usp=share_link) referenced in [Installation Step 5](#step-5-pre-trained-models--dataset). Place datasets at the paths below (or update `core/config/config.yaml`).
 
 ### Fire Detection Dataset
 
