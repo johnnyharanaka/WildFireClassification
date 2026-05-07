@@ -125,15 +125,16 @@ Pre-trained weights and the fire dataset are **not** versioned in this repositor
 📦 [**Download models & dataset**](https://drive.google.com/drive/folders/1pu3-j3vwSWNg42jBk1RIblMMSW0sPZWp?usp=share_link)
 
 The shared folder contains:
-- `original_models/` → rename to `models/` (or copy its contents) and place at the project root
+- `original_models/` → place inside `core/` (i.e. `core/original_models/`)
 - `data_fire/` → place directly at the project root
 
 Final layout:
 ```
 FireClassification/
-├── models/           # from original_models/
-│   └── *.pth
-├── data_fire/        # fire detection dataset
+├── core/
+│   └── original_models/   # pre-trained backbone weights
+│       └── *.pth
+├── data_fire/             # fire detection dataset
 │   ├── Train/
 │   ├── Val/
 │   └── Test/
