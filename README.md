@@ -564,81 +564,27 @@ python main.py --embeddings
 
 ```
 FireClassification/
-├── core/                              # Core application modules
-│   ├── __init__.py
-│   ├── engine.py                     # Training loops & validation
-│   ├── models.py                     # Model factory & architectures
-│   ├── dino_classifier.py            # DinoV2 classifier implementation
-│   ├── dinov3_classifier.py          # DinoV3 classifier implementation
-│   ├── vis.py                        # Testing & visualization pipeline
-│   ├── vis_utils.py                  # Visualization utilities
-│   ├── vis_graph.py                  # Graph-based visualization
-│   ├── datasets.py                   # Data loading & augmentation
-│   ├── nwpu_dataset.py               # NWPU VHR-10 dataset loader
-│   ├── evaluation.py                 # Evaluation framework
-│   ├── metrics.py                    # Metric calculations (CorLoc, mAP, F1)
-│   ├── losses.py                     # Focal, Contrastive losses
-│   ├── gradcam.py                    # GradCAM implementation
-│   ├── attention_rollout.py          # Attention rollout
-│   ├── attention_map.py              # Attention map utilities
-│   ├── crf_refiner.py                # CRF post-processing
-│   ├── custom_models.py              # Custom architectures
-│   ├── debug.py                      # Debugging utilities
-│   ├── contrastive_engine.py         # Contrastive learning engine
-│   ├── ema.py                        # Exponential Moving Average
-│   ├── lr_scheduler.py               # Learning rate schedulers
-│   ├── LoRA.py                       # LoRA fine-tuning support
-│   ├── utils.py                      # Shared utilities
-│   ├── config/
-│   │   ├── config.yaml               # Configuration file
-│   │   └── config.py                 # Config loader
-│   ├── TSCAM/                        # Token Spatial CAM module
-│   └── dinov2/                       # DINOv2 backbone (vendored)
-│
-├── interface/                        # Python API
-│   ├── __init__.py
-│   └── api.py                        # FireClassificationInterface
-│
-├── tests/                            # Test suite (pytest)
-│   ├── conftest.py
-│   ├── test_datasets.py
-│   ├── test_engine.py
-│   ├── test_evaluation.py
-│   ├── test_losses.py
-│   └── test_metrics.py
-│
-├── utils/                            # Dataset conversion & analysis scripts
-│   ├── convert_fire_to_coco.py       # Fire dataset → COCO format
-│   ├── convert_nwpu.py               # NWPU pre-processing
-│   ├── convert_nwpu_to_coco.py       # NWPU → COCO format
-│   ├── convert_dior.py               # DIOR pre-processing
-│   ├── convert_dior_to_coco.py       # DIOR → COCO format
-│   ├── convert_model_rs.py           # Remote-sensing model conversion
-│   ├── compare_attention.py          # Attention comparison
-│   ├── histogram_iou.py              # IoU histogram analysis
-│   └── plot_iou.py                   # IoU plotting
-│
-├── main.py                           # Main CLI entry point
-├── run_multi_seed.py                 # Multi-seed training & eval (mean ± std)
-├── vis_bb_predictions.py             # Bounding-box visualization helper
-├── pyproject.toml                    # Project metadata & dependencies (uv)
-├── uv.lock                           # Locked dependency versions
-└── README.md                         # This file
+├── core/                  # Our code, grouped by topic
+│   ├── config/            # YAML config + loader
+│   ├── datasets/          # Dataset loaders & augmentations
+│   ├── losses/            # Focal, contrastive, etc.
+│   ├── models/            # Model factory + Dino classifiers + LoRA
+│   ├── metrics/           # CorLoc, mAP, F1
+│   ├── training/          # Engine, evaluation, schedulers, EMA
+│   ├── visualization/     # vis, GradCAM, attention rollout/maps
+│   ├── postproc/          # CRF refinement
+│   └── utils/             # Shared helpers + debug
+├── backbones/             # Vendored DINO (dinov2/, dinov3/)
+├── third_party/           # Vendored TSCAM, pcl.pytorch, WSDDN-PyTorch
+├── interface/             # Python API
+├── tests/                 # pytest suite
+├── utils/                 # Dataset conversion & analysis scripts
+├── main.py                # CLI entry point
+├── run_multi_seed.py      # Multi-seed training & eval
+└── pyproject.toml         # Dependencies (uv)
 ```
 
-> Datasets (`data_fire/`, `data_nwpu/`), pre-trained weights (`models/`), inference results (`results/`), and training artifacts (`output/`) are excluded from version control via `.gitignore`. Provide them locally as described in the [Datasets](#datasets) and [Installation](#installation) sections.
-
-### Core Module Descriptions
-
-| Module | Purpose |
-|--------|---------|
-| `engine.py` | Training loops, validation, checkpoint saving |
-| `models.py` | Model factory, architecture definitions, pre-training loading |
-| `dino_classifier.py` | DinoV2 classifier head, attention aggregation, feature extraction |
-| `vis_utils.py` | Heatmap visualization, bounding box drawing, annotation overlays |
-| `vis.py` | Model testing pipeline, inference wrapper, result aggregation |
-| `metrics.py` | CorLoc, mAP, F1-score calculations, confusion matrices |
-| `debug.py` | Bounding box visualization for debugging pseudo-labels |
+> Datasets (`data_fire/`, `data_nwpu/`), pre-trained weights (`models/`), and training artifacts are gitignored — provide them locally as described in [Datasets](#datasets) and [Installation](#installation).
 
 ## Acknowledgments
 
