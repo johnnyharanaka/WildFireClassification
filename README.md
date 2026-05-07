@@ -15,9 +15,7 @@ A small PyTorch framework for wildfire detection using weakly-supervised object 
 - [Evaluation & Inference](#evaluation--inference)
 - [Advanced Features](#advanced-features)
 - [Project Structure](#project-structure)
-- [Results](#results)
-- [Contributing](#contributing)
-- [References](#references)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -325,7 +323,7 @@ training:
 
 **Expected location:** `data_nwpu/`
 - **Classes:** 11 object types (airplane, ship, storage tank, swimming pool, etc.)
-- **Original:** NWPU VHR-10 remote sensing dataset (see [References](#references))
+- **Original:** [NWPU VHR-10 remote sensing dataset](https://gcheng-nwpu.github.io/)
 - **Structure:**
   ```
   data_nwpu/
@@ -621,57 +619,6 @@ FireClassification/
 | `metrics.py` | CorLoc, mAP, F1-score calculations, confusion matrices |
 | `debug.py` | Bounding box visualization for debugging pseudo-labels |
 
-## Results
+## Acknowledgments
 
-The system achieves strong performance on both datasets:
-
-### Fire Detection (Binary Classification)
-- **Accuracy:** >95% on test set
-- **F1-Score:** >0.92
-- **Speed:** Real-time inference (200+ images/sec on GPU)
-
-### NWPU VHR-10 (Multi-class Detection)
-- **CorLoc (Weakly-supervised):** >85%
-- **mAP:** Competitive with fully-supervised baselines
-- **Inference:** 50+ images/sec with visualization
-
-## Contributing
-
-### Development Setup
-1. Create a feature branch: `git checkout -b feature/your-feature`
-2. Make your changes and test thoroughly
-3. Run evaluation: `python main.py --test`
-4. Submit a pull request with detailed description
-
-### Coding Standards
-- Follow PEP 8 style guide
-- Add docstrings to new functions
-- Include type hints where applicable
-- Test on both CPU and GPU
-
-### Running Tests
-```bash
-uv run pytest
-```
-Test suite lives under `tests/` and covers datasets, engine, evaluation, losses, and metrics.
-
-## References
-
-### Key Papers
-- **DINOv2:** Oquab et al., "DINOv2: Learning Robust Visual Features without Supervision" (2023)
-- **Focal Loss:** Lin et al., "Focal Loss for Dense Object Detection" (2017)
-- **Contrastive Learning:** Khosla et al., "Supervised Contrastive Learning" (2020)
-- **GradCAM:** Selvaraju et al., "Grad-CAM: Visual Explanations from Deep Networks" (2017)
-
-### Related Resources
-- [DINOv2 GitHub](https://github.com/facebookresearch/dinov2)
-- [PyTorch Documentation](https://pytorch.org/docs/)
-- [COCO Dataset](https://cocodataset.org/)
-- [NWPU VHR-10 Dataset](https://gcheng-nwpu.github.io/)
-
----
-
-**Project Status:** Active Development
-**Last Updated:** May 2026
-
-For questions or issues, please open a GitHub issue.
+Parts of the codebase were reviewed and refined with the help of [Claude](https://www.anthropic.com/claude) (Anthropic), used as a coding assistant for code review, refactoring suggestions, and documentation.
