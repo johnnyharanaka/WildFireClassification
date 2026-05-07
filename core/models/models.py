@@ -17,7 +17,7 @@ from timm.models import create_model as timm_create_model
 from core.config.config import log_info
 from .dino_classifier import DinoClassifier, LoRADinoClassifier
 from .custom_models import FNClassifier
-from core.TSCAM.lib.config.default import cfg_from_file, config
+from third_party.TSCAM.lib.config.default import cfg_from_file, config
 
 if __name__ == "__main__":
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

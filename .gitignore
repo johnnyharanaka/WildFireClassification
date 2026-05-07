@@ -1661,8 +1661,8 @@ antes/
 /datasets
 /evolution_gifs
 vis_predictions/
-core/pcl.pytorch/
-core/WSDDN-PyTorch/
+third_party/pcl.pytorch/
+third_party/WSDDN-PyTorch/
 Outputs/
 data_fire.zip
 /Analise com melhor mAP/
