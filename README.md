@@ -1,6 +1,6 @@
-# FireClassification: Advanced Fire Detection with Vision Transformers
+# FireClassification: Simple WSOD framework to detect wildfire
 
-A sophisticated PyTorch-based computer vision project for fire detection and classification using state-of-the-art vision transformers (DinoV2) with weakly-supervised object detection and attention-based localization.
+A small PyTorch framework for wildfire detection using weakly-supervised object detection (WSOD). It trains an image-level classifier on top of DinoV2 backbones and derives bounding boxes from attention/GradCAM maps — no pixel-level annotations required.
 
 ## Table of Contents
 
@@ -21,14 +21,15 @@ A sophisticated PyTorch-based computer vision project for fire detection and cla
 
 ## Overview
 
-FireClassification is a production-ready system for detecting and classifying fires in images using advanced vision transformer architectures. The project implements weakly-supervised learning techniques to generate bounding boxes from attention maps without requiring pixel-level annotations, making it ideal for large-scale fire detection applications.
+FireClassification is a research-oriented framework for detecting wildfire in images using weakly-supervised learning. Instead of relying on costly pixel- or box-level annotations, it trains a binary classifier (fire / not fire) and reuses the model's own attention to produce bounding boxes around fire regions.
 
-**Key Capabilities:**
-- Binary fire vs. non-fire classification
-- Multi-class object detection (NWPU VHR-10 support with 11 classes)
-- Weakly-supervised bounding box localization
-- Real-time inference with attention visualization
-- Support for remote sensing imagery
+The same pipeline is also evaluated on the NWPU VHR-10 remote-sensing dataset (11 classes) to validate the WSOD approach in a multi-class setting.
+
+**What it does:**
+- Binary fire vs. not-fire classification
+- Weakly-supervised bounding-box generation from attention/GradCAM
+- Optional multi-class WSOD evaluation on NWPU VHR-10
+- Attention visualization and sanity-check tooling
 
 ## Key Features
 
