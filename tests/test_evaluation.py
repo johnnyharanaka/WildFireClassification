@@ -5,7 +5,7 @@ import pytest
 import torch
 import torch.nn as nn
 
-from core.evaluation import eval_fn, val_epoch
+from core.training.evaluation import eval_fn, val_epoch
 
 
 # --------------------------------------------------------------- helpers --
@@ -83,7 +83,7 @@ class TestValEpoch:
         loader = _make_loader()
         criterion = nn.CrossEntropyLoss()
 
-        with patch("core.evaluation.get_config", return_value=None):
+        with patch("core.training.evaluation.get_config", return_value=None):
             mean_loss, mean_acc = val_epoch(
                 model, loader, "cpu", criterion, epoch=0, total_epoch=1
             )
@@ -95,7 +95,7 @@ class TestValEpoch:
         model = _PlainModel()
         loader = _make_loader(n_batches=1, batch_size=2)
         criterion = nn.CrossEntropyLoss()
-        with patch("core.evaluation.get_config", return_value=None):
+        with patch("core.training.evaluation.get_config", return_value=None):
             mean_loss, _ = val_epoch(
                 model,
                 loader,
@@ -131,7 +131,7 @@ class TestValEpoch:
                 return 2.0
             return None
 
-        with patch("core.evaluation.get_config", side_effect=fake):
+        with patch("core.training.evaluation.get_config", side_effect=fake):
             mean_loss, _ = val_epoch(
                 model,
                 loader,
@@ -162,7 +162,7 @@ class TestValEpoch:
             "triplet": None,
             "center": {"loss_func": center_fn, "weight": 0.5, "miner": None},
         }
-        with patch("core.evaluation.get_config", return_value=None):
+        with patch("core.training.evaluation.get_config", return_value=None):
             val_epoch(
                 model,
                 loader,

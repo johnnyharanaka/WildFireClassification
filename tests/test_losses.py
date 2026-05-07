@@ -97,7 +97,7 @@ class TestGetLoss:
                 return {"label_smoothing": 0.1}
             return None
 
-        with patch("core.losses.get_config", side_effect=fake):
+        with patch("core.losses.losses.get_config", side_effect=fake):
             loss = get_loss()
         assert isinstance(loss, nn.CrossEntropyLoss)
         assert loss.label_smoothing == pytest.approx(0.1)
@@ -106,7 +106,7 @@ class TestGetLoss:
         def fake(*keys):
             return "ce" if keys == ("loss", "selected") else None
 
-        with patch("core.losses.get_config", side_effect=fake):
+        with patch("core.losses.losses.get_config", side_effect=fake):
             loss = get_loss()
         assert isinstance(loss, nn.CrossEntropyLoss)
         assert loss.label_smoothing == 0.0
@@ -119,7 +119,7 @@ class TestGetLoss:
                 return {"alpha": 0.3, "gamma": 1.5}
             return None
 
-        with patch("core.losses.get_config", side_effect=fake):
+        with patch("core.losses.losses.get_config", side_effect=fake):
             loss = get_loss()
         assert isinstance(loss, FocalLoss)
         assert loss.alpha == pytest.approx(0.3)
@@ -129,7 +129,7 @@ class TestGetLoss:
         def fake(*keys):
             return "bogus" if keys == ("loss", "selected") else None
 
-        with patch("core.losses.get_config", side_effect=fake):
+        with patch("core.losses.losses.get_config", side_effect=fake):
             with pytest.raises(ValueError, match="Unknown loss"):
                 get_loss()
 
@@ -137,12 +137,12 @@ class TestGetLoss:
 # --------------------------------------------------- setup_contrastive_learning --
 class TestSetupContrastiveLearning:
     def test_returns_none_if_no_config(self):
-        with patch("core.losses.get_config", return_value=None):
+        with patch("core.losses.losses.get_config", return_value=None):
             assert setup_contrastive_learning() is None
 
     def test_returns_none_if_selected_is_none(self):
         cfg = {"selected": None}
-        with patch("core.losses.get_config", return_value=cfg):
+        with patch("core.losses.losses.get_config", return_value=cfg):
             # selected=None → "Single-stage training: Classification only"
             assert setup_contrastive_learning() is None
 
@@ -156,7 +156,7 @@ class TestSetupContrastiveLearning:
                 return {"temperature": 0.07, "miner": "none"}
             return None
 
-        with patch("core.losses.get_config", side_effect=fake):
+        with patch("core.losses.losses.get_config", side_effect=fake):
             result = setup_contrastive_learning()
         assert result is not None
         assert result["supcon"] is not None
@@ -175,7 +175,7 @@ class TestSetupContrastiveLearning:
                 return {"margin": 0.3, "miner": "semihard"}
             return None
 
-        with patch("core.losses.get_config", side_effect=fake):
+        with patch("core.losses.losses.get_config", side_effect=fake):
             result = setup_contrastive_learning()
         assert result["triplet"] is not None
         assert result["supcon"] is None
@@ -191,7 +191,7 @@ class TestSetupContrastiveLearning:
                 return {"num_classes": 5, "embedding_size": 64}
             return None
 
-        with patch("core.losses.get_config", side_effect=fake):
+        with patch("core.losses.losses.get_config", side_effect=fake):
             result = setup_contrastive_learning()
         assert result["center"] is not None
         cl = result["center"]["loss_func"]

@@ -23,8 +23,8 @@ import torch
 from core.models import get_model, load_model
 from core.datasets import get_data_loaders
 from core.config.config import get_config, get_active_dataset_config
-from core.attention_rollout import compute_attention_rollout
-from core.attention_map import get_last_layer_attention
+from core.visualization.attention_rollout import compute_attention_rollout
+from core.visualization.attention_map import get_last_layer_attention
 
 
 def colorize_heatmap(heatmap):

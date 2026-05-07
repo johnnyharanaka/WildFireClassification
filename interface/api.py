@@ -10,12 +10,12 @@ from core import (
     train, vis, list_all_models, load_model, test_model,
     embedding_vis, check_images, get_device, get_model, add_attn_maps
 )
-from core.debug import save_bbox_visualizations
+from core.utils.debug import save_bbox_visualizations
 from core.config.config import (
     write_results, init_results, get_config,
     get_active_dataset_config, set_root_path, log_info
 )
-from core.dino_classifier import DinoClassifier
+from core.models.dino_classifier import DinoClassifier
 
 
 class FireClassificationInterface:
@@ -245,7 +245,7 @@ class FireClassificationInterface:
         Returns:
             If return_for_notebook=True, returns dict with Plotly figures
         """
-        from core.vis import visualize_embeddings_from_json
+        from core.visualization.vis import visualize_embeddings_from_json
 
         if model_name is None:
             run_models = get_config("defaults", "run_models")
@@ -274,7 +274,7 @@ class FireClassificationInterface:
         """
         import glob
         from pathlib import Path
-        from core.vis import visualize_embeddings_from_json
+        from core.visualization.vis import visualize_embeddings_from_json
 
         if model_name is None:
             run_models = get_config("defaults", "run_models")

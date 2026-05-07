@@ -5,7 +5,7 @@ import pytest
 import torch
 import torch.nn as nn
 
-from core.engine import get_device, get_training_stages, train_one_epoch
+from core.training.engine import get_device, get_training_stages, train_one_epoch
 
 
 # --------------------------------------------------------------- helpers --
@@ -62,7 +62,7 @@ class TestGetDevice:
 # --------------------------------------------------------- training_stages --
 class TestGetTrainingStages:
     def test_single_stage_when_no_contrastive(self):
-        with patch("core.engine.get_config", return_value=None):
+        with patch("core.training.engine.get_config", return_value=None):
             stages = get_training_stages(10, 5)
         assert stages["mode"] == "single"
         assert stages["epochs_stage1"] == 0
@@ -70,7 +70,7 @@ class TestGetTrainingStages:
         assert stages["contrastive_type"] is None
 
     def test_two_stage_when_contrastive_selected(self):
-        with patch("core.engine.get_config", return_value="supcon"):
+        with patch("core.training.engine.get_config", return_value="supcon"):
             stages = get_training_stages(10, 5)
         assert stages["mode"] == "two-stage"
         assert stages["epochs_stage1"] == 10
@@ -89,7 +89,7 @@ class TestTrainOneEpoch:
 
         weights_before = model.fc.weight.clone()
 
-        with patch("core.engine.get_config", return_value=None):
+        with patch("core.training.engine.get_config", return_value=None):
             mean_loss, mean_acc = train_one_epoch(
                 loader,
                 "cpu",
@@ -113,7 +113,7 @@ class TestTrainOneEpoch:
         criterion = nn.CrossEntropyLoss()
         optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
 
-        with patch("core.engine.get_config", return_value=None):
+        with patch("core.training.engine.get_config", return_value=None):
             mean_loss, _ = train_one_epoch(
                 loader,
                 "cpu",
@@ -150,7 +150,7 @@ class TestTrainOneEpoch:
                 return 3.0
             return None
 
-        with patch("core.engine.get_config", side_effect=fake):
+        with patch("core.training.engine.get_config", side_effect=fake):
             mean_loss_a, _ = train_one_epoch(
                 loader,
                 "cpu",
@@ -173,7 +173,7 @@ class TestTrainOneEpoch:
                 return 1.0
             return None
 
-        with patch("core.engine.get_config", side_effect=fake_one):
+        with patch("core.training.engine.get_config", side_effect=fake_one):
             mean_loss_b, _ = train_one_epoch(
                 loader,
                 "cpu",
@@ -207,7 +207,7 @@ class TestTrainOneEpoch:
             "center": None,
         }
 
-        with patch("core.engine.get_config", return_value=None):
+        with patch("core.training.engine.get_config", return_value=None):
             train_one_epoch(
                 loader,
                 "cpu",

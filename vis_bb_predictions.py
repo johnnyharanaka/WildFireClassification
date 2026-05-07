@@ -448,7 +448,7 @@ def visualise_tscam(common_fnames: list[str],
     model = model.to(device)
 
     from core.datasets import get_data_loaders
-    from core.vis_utils import VisUtils, compute_dynamic_threshold
+    from core.visualization.vis_utils import VisUtils, compute_dynamic_threshold
 
     root_path = (get_active_dataset_config("data_path")
                  or get_active_dataset_config("root_path") or "data/")
@@ -516,7 +516,7 @@ def visualise_tscam(common_fnames: list[str],
                 bbs       = VisUtils.generate_bounding_box(
                     attn_np, threshold=threshold, min_area=min_area)
                 if len(bbs) > 1:
-                    from core.debug import remove_nested_bboxes
+                    from core.utils.debug import remove_nested_bboxes
                     bbs = remove_nested_bboxes(bbs, containment_threshold=0.5)
                 sx, sy = W_orig / IMG_SIZE, H_orig / IMG_SIZE
                 for bb in bbs[:n_pred]:
@@ -571,7 +571,7 @@ def visualise_gradcam(common_fnames: list[str],
 
     from core.config.config import get_active_dataset_config, get_config
     from core.original_models.resnet50_gradcam import ResNet50GradCAM
-    from core.vis_utils import VisUtils, compute_dynamic_threshold
+    from core.visualization.vis_utils import VisUtils, compute_dynamic_threshold
 
     IMG_SIZE   = 224
     num_classes = get_active_dataset_config("num_classes") or 2
@@ -652,7 +652,7 @@ def visualise_gradcam(common_fnames: list[str],
         bbs       = VisUtils.generate_bounding_box(
             cam_np, threshold=threshold, min_area=min_area)
         if len(bbs) > 1:
-            from core.debug import remove_nested_bboxes
+            from core.utils.debug import remove_nested_bboxes
             bbs = remove_nested_bboxes(bbs, containment_threshold=0.5)
 
         sx, sy = W_orig / IMG_SIZE, H_orig / IMG_SIZE
@@ -710,8 +710,8 @@ def visualise_dinov2rs(common_fnames: list[str],
 
     from core.config.config import get_active_dataset_config, get_config
     from core.models import get_model
-    from core.attention_map import get_last_layer_attention
-    from core.vis_utils import VisUtils, compute_dynamic_threshold
+    from core.visualization.attention_map import get_last_layer_attention
+    from core.visualization.vis_utils import VisUtils, compute_dynamic_threshold
 
     # Use the img_size defined in config for this model (e.g. 672 for DinoV2RS_Small)
     _model_cfg = get_config("models", model_name_arg) or {}
@@ -786,7 +786,7 @@ def visualise_dinov2rs(common_fnames: list[str],
         # CRF refinement if enabled (same as evaluate_wsod)
         crf_config = get_config("crf") or {}
         if crf_config.get("enabled", False):
-            from core.gradcam import refine_heatmap_with_crf
+            from core.visualization.gradcam import refine_heatmap_with_crf
             attn_np = refine_heatmap_with_crf(
                 attn_np, image=None, use_crf=True, crf_config=crf_config)
 
@@ -796,7 +796,7 @@ def visualise_dinov2rs(common_fnames: list[str],
         bbs       = VisUtils.generate_bounding_box(
             attn_np, threshold=threshold, min_area=min_area)
         if len(bbs) > 1:
-            from core.debug import remove_nested_bboxes
+            from core.utils.debug import remove_nested_bboxes
             bbs = remove_nested_bboxes(bbs, containment_threshold=0.5)
 
         # Fallback: bbox da imagem inteira (mesmo que evaluate_wsod)

@@ -29,9 +29,9 @@ from core.config.config import get_config, get_active_dataset_config, log_info, 
 from core.models import get_model, load_model, add_attn_maps
 from core.datasets import get_data_loaders
 from core.metrics import load_coco_bboxes_from_json, normalize_bbox, compute_iou
-from core.attention_map import get_last_layer_attention
-from core.vis_utils import VisUtils, compute_dynamic_threshold
-from core.debug import remove_nested_bboxes
+from core.visualization.attention_map import get_last_layer_attention
+from core.visualization.vis_utils import VisUtils, compute_dynamic_threshold
+from core.utils.debug import remove_nested_bboxes
 
 
 def get_device_auto():

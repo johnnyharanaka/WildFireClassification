@@ -10,7 +10,7 @@ import numpy as np
 
 from core import train, vis, list_all_models, load_model, test_model, embedding_vis, check_images, visualize_embeddings_from_json
 from core import get_device, get_model, add_attn_maps
-from core.debug import process_multiple_checkpoints
+from core.utils.debug import process_multiple_checkpoints
 from core.config.config import init_results, get_config, get_active_dataset_config, set_root_path, set_global_seed
 from core.config.config import log_info
 from core.metrics import evaluate_wsod

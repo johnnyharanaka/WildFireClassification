@@ -13,14 +13,14 @@ import torch
 import torch.nn.functional as F
 
 from core.config.config import get_config, log_info
-from .datasets import get_data_loaders
-from .attention_rollout import compute_multiscale_attention_maps
-from .attention_map import get_last_layer_attention
-from .gradcam import (
+from ..datasets import get_data_loaders
+from ..visualization.attention_rollout import compute_multiscale_attention_maps
+from ..visualization.attention_map import get_last_layer_attention
+from ..visualization.gradcam import (
     compute_gradcam,
     refine_heatmap_with_crf,
 )
-from .vis_utils import VisUtils, compute_dynamic_threshold
+from ..visualization.vis_utils import VisUtils, compute_dynamic_threshold
 
 def get_root_path():
     """Returns the active dataset path.

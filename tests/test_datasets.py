@@ -55,7 +55,7 @@ class TestPadResize:
 class TestSeedWorker:
     def test_seed_worker_seeds_all_libs(self):
         # After calling seed_worker, the three RNGs should be seeded by base+worker_id
-        with patch("core.datasets.get_global_seed", return_value=100):
+        with patch("core.datasets.datasets.get_global_seed", return_value=100):
             seed_worker(7)
             np_val = np.random.rand()
             py_val = _random.random()
@@ -67,7 +67,7 @@ class TestSeedWorker:
             assert torch.rand(1).item() == torch_val
 
     def test_different_workers_get_different_seeds(self):
-        with patch("core.datasets.get_global_seed", return_value=42):
+        with patch("core.datasets.datasets.get_global_seed", return_value=42):
             seed_worker(0)
             v0 = np.random.rand()
             seed_worker(1)
@@ -78,13 +78,13 @@ class TestSeedWorker:
 # ------------------------------------------------------ _get_data_transforms --
 class TestGetDataTransforms:
     def test_default_transforms_have_train_and_eval_keys(self):
-        with patch("core.datasets.get_augmentation_config", return_value=None):
+        with patch("core.datasets.datasets.get_augmentation_config", return_value=None):
             t = _get_data_transforms(train_size=64)
         assert {"Train", "Val", "Test"} <= set(t)
 
     def test_eval_transforms_are_deterministic(self):
         """Eval pipeline = PadResize + ToTensor + Normalize. No randomness."""
-        with patch("core.datasets.get_augmentation_config", return_value=None):
+        with patch("core.datasets.datasets.get_augmentation_config", return_value=None):
             t = _get_data_transforms(train_size=64)
         img = Image.new("RGB", (80, 60), color=(120, 130, 140))
         out1 = t["Val"](img)
@@ -93,7 +93,7 @@ class TestGetDataTransforms:
         assert out1.shape == (3, 64, 64)
 
     def test_eval_size_overrides_train_size(self):
-        with patch("core.datasets.get_augmentation_config", return_value=None):
+        with patch("core.datasets.datasets.get_augmentation_config", return_value=None):
             t = _get_data_transforms(train_size=32, eval_size=128)
         img = Image.new("RGB", (40, 40))
         assert t["Train"](img).shape == (3, 32, 32)
@@ -102,7 +102,7 @@ class TestGetDataTransforms:
     def test_horizontal_flip_disabled_by_config(self):
         """When hflip is disabled, the train transform should not contain a flip op."""
         aug = {"random_horizontal_flip": {"enabled": False}}
-        with patch("core.datasets.get_augmentation_config", side_effect=lambda key: aug if key == "standard" else None):
+        with patch("core.datasets.datasets.get_augmentation_config", side_effect=lambda key: aug if key == "standard" else None):
             t = _get_data_transforms(train_size=32)
         op_types = [type(op).__name__ for op in t["Train"].transforms]
         assert "RandomHorizontalFlip" not in op_types
@@ -116,7 +116,7 @@ class TestGetDataTransforms:
             "random_solarize": {"enabled": True, "threshold": 128, "probability": 0.2},
             "random_grayscale": {"enabled": True, "probability": 0.2},
         }
-        with patch("core.datasets.get_augmentation_config", side_effect=lambda key: aug if key == "standard" else None):
+        with patch("core.datasets.datasets.get_augmentation_config", side_effect=lambda key: aug if key == "standard" else None):
             t = _get_data_transforms(train_size=32)
         op_types = [type(op).__name__ for op in t["Train"].transforms]
         assert "RandomVerticalFlip" in op_types
@@ -128,7 +128,7 @@ class TestGetDataTransforms:
     def test_custom_normalization_used(self):
         norm = {"mean": [0.5, 0.5, 0.5], "std": [0.5, 0.5, 0.5]}
         with patch(
-            "core.datasets.get_augmentation_config",
+            "core.datasets.datasets.get_augmentation_config",
             side_effect=lambda key: norm if key == "normalization" else None,
         ):
             t = _get_data_transforms(train_size=8)
